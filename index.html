@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="zh-TW" data-theme="light">
+<head>
+<title>yc._vetalk</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="assets/style.css">
+<link rel="stylesheet" href="assets/nav.css">
+<link rel="stylesheet" href="assets/ah.css?v=4">
+</head>
+<body class="ah">
+
+<header>
+  <a class="header-brand" href="index.html">
+    <h1>yc._vetalk</h1>
+    <div class="subtitle">DVM Course Notes · 大一～大四</div>
+  </a>
+  <div class="site-nav" id="siteNav" data-base="" data-current=""></div>
+  <div class="header-right">
+    <div class="search-wrap lg" style="width:260px;">
+      <span class="search-icon">🔍</span>
+      <input type="text" id="searchInput" placeholder="跨科目／週次搜尋..." autocomplete="off">
+      <div id="searchResults" class="search-results"></div>
+    </div>
+    <button class="theme-btn" id="themeBtn" onclick="toggleTheme()" title="切換深色/淺色模式">🌙</button>
+  </div>
+</header>
+<div class="nav-panel" id="navPanel"></div>
+
+<section class="pagehead">
+  <div class="pagehead__inner">
+    <h1 class="pagehead__title">DVM_note</h1>
+    <p class="pagehead__lede">依學期、科目、週次整理的課堂筆記。點進科目查看各週筆記，或直接用上方搜尋框跨科目／跨週次找內容。</p>
+    <div class="pagehead__actions"><a class="btn" href="考前重點.html">★ 考前重點</a></div>
+  </div>
+</section>
+
+<main class="homewrap">
+  <h2>住院醫師筆記</h2>
+  <div class="empty-state">尚未公開發布</div>
+
+  <h2>大四</h2>
+  <ul class="hero-doors">
+    <li>
+      <a class="hero-door hero-door--rust" href="大四上/大動物外科手術及實習/index.html">
+        <div class="hero-door__body">
+          <span class="hero-door__index">01</span>
+          <span class="hero-door__kicker">Large Animal Surgery</span>
+          <h3 class="hero-door__title">大動物外科手術及實習</h3>
+          <p class="hero-door__desc">大動物外科手術操作、術前考量與麻醉整理。</p>
+          <ul class="hero-door__topics">
+            <li>Week 1：術前考量與麻醉</li>
+            <li>Week 1：縫合材料與結紮技術</li>
+            <li>Week 3：腹腔手術</li>
+            <li>Week 5：手術器械圖鑑</li>
+          </ul>
+          <span class="hero-door__link">查看主題 →</span>
+        </div>
+      </a>
+    </li>
+    <li>
+      <a class="hero-door hero-door--slate" href="大四上/禽病學/index.html">
+        <div class="hero-door__body">
+          <span class="hero-door__index">02</span>
+          <span class="hero-door__kicker">Avian Medicine</span>
+          <h3 class="hero-door__title">禽病學</h3>
+          <p class="hero-door__desc">家禽病毒性疾病的病原、病變與疫苗防治整理。</p>
+          <ul class="hero-door__topics">
+            <li>Week 2：新城病 (ND)</li>
+            <li>Week 3：傳染性支氣管炎 (IB)</li>
+          </ul>
+          <span class="hero-door__link">查看主題 →</span>
+        </div>
+      </a>
+    </li>
+    <li>
+      <a class="hero-door hero-door--amber" href="大四上/豬病學/index.html">
+        <div class="hero-door__body">
+          <span class="hero-door__index">03</span>
+          <span class="hero-door__kicker">Swine Medicine</span>
+          <h3 class="hero-door__title">豬病學</h3>
+          <p class="hero-door__desc">豬隻病毒性與細菌性疾病的病原、致病機轉、診斷與防治，附國考題整理。</p>
+          <ul class="hero-door__topics">
+            <li>Week 1：課程介紹與養豬產業、細菌抗藥性</li>
+            <li>Week 2：豬病毒性疾病 (I)</li>
+            <li>Week 3：豬病毒性疾病 (II)</li>
+            <li>Week 4：小 RNA 病毒科疾病、豬痘</li>
+            <li>Week 5：豬流行性感冒、豬冠狀病毒病</li>
+            <li>Week 6：細菌性疾病 (I)</li>
+            <li>Week 7：細菌性疾病 (II)</li>
+            <li>Week 8：期中總複習</li>
+          </ul>
+          <span class="hero-door__link">查看主題 →</span>
+        </div>
+      </a>
+    </li>
+    <li>
+      <a class="hero-door hero-door--green" href="大四上/反芻動物疾病學/index.html">
+        <div class="hero-door__body">
+          <span class="hero-door__index">04</span>
+          <span class="hero-door__kicker">Ruminant Medicine</span>
+          <h3 class="hero-door__title">反芻動物疾病學</h3>
+          <p class="hero-door__desc">牛羊等反芻動物常見疾病整理。</p>
+          <ul class="hero-door__topics">
+            <li>第 1 講：乳牛營養與飼養管理</li>
+            <li>第 1 講：轉換期、低血鈣與 DCAD</li>
+            <li>第 2 講：臨床檢查、眼科疾病</li>
+            <li>第 3 講：仔牛疾病</li>
+            <li>第 4 講：牛傳染病（腸胃道、呼吸道、其他）</li>
+            <li>第 5 講：羊傳染病</li>
+            <li>第 6 講：羊理學檢查與臨床病理</li>
+            <li>第 7–8 講：乳房結構、乳房炎</li>
+          </ul>
+          <span class="hero-door__link">查看主題 →</span>
+        </div>
+      </a>
+    </li>
+    <li>
+      <a class="hero-door hero-door--rust" href="大四上/伴侶動物復健及物理治療學/index.html">
+        <div class="hero-door__body">
+          <span class="hero-door__index">05</span>
+          <span class="hero-door__kicker">Rehabilitation &amp; Physical Therapy</span>
+          <h3 class="hero-door__title">伴侶動物復健及物理治療學</h3>
+          <p class="hero-door__desc">犬貓術後復健與物理治療技術整理。</p>
+          <span class="hero-door__link">查看主題 →</span>
+        </div>
+      </a>
+    </li>
+    <li>
+      <a class="hero-door hero-door--slate" href="大四上/水產動物疾病學/index.html">
+        <div class="hero-door__body">
+          <span class="hero-door__index">06</span>
+          <span class="hero-door__kicker">Aquatic Animal Medicine</span>
+          <h3 class="hero-door__title">水產動物疾病學</h3>
+          <p class="hero-door__desc">水產養殖動物常見疾病整理。</p>
+          <p class="hero-door__empty">尚無筆記，整理中。</p>
+          <span class="hero-door__link">前往頁面 →</span>
+        </div>
+      </a>
+    </li>
+    <li>
+      <a class="hero-door hero-door--amber" href="大四上/獸醫臨床及影像診斷學/index.html">
+        <div class="hero-door__body">
+          <span class="hero-door__index">07</span>
+          <span class="hero-door__kicker">Clinical &amp; Diagnostic Imaging</span>
+          <h3 class="hero-door__title">獸醫臨床及影像診斷學</h3>
+          <p class="hero-door__desc">X光、超音波等臨床影像判讀整理。</p>
+          <ul class="hero-door__topics">
+            <li>Week 2：超音波診斷入門</li>
+            <li>Week 3：X光學（脊椎影像判讀、解剖圖譜）</li>
+            <li>Week 4：CT與MRI原理</li>
+            <li>Week 5：神經影像課前預習</li>
+            <li>Week 6：消化道臨床檢查與影像</li>
+            <li>Week 7：犬貓完整口腔評估與治療 COHAT</li>
+          </ul>
+          <span class="hero-door__link">查看主題 →</span>
+        </div>
+      </a>
+    </li>
+  </ul>
+
+  <h2>大三</h2>
+  <div class="empty-state">尚未公開發布</div>
+
+  <h2>大二</h2>
+  <div class="empty-state">尚未公開發布</div>
+
+  <h2>大一</h2>
+  <div class="empty-state">尚未公開發布</div>
+
+  <h2>Textbook</h2>
+  <div class="empty-state">尚未公開發布</div>
+
+  <h2>國考</h2>
+  <ul class="hero-doors">
+    <li>
+      <a class="hero-door hero-door--rust" href="國考/獸醫病理學/index.html">
+        <div class="hero-door__body">
+          <span class="hero-door__index">01</span>
+          <span class="hero-door__kicker">Veterinary Pathology</span>
+          <h3 class="hero-door__title">獸醫病理學</h3>
+          <p class="hero-door__desc">病理總論（細胞傷害、炎症、循環障礙、腫瘤）與各系統病理。</p>
+          <p class="hero-door__empty">尚無筆記，整理中。</p>
+          <span class="hero-door__link">前往頁面 →</span>
+        </div>
+      </a>
+    </li>
+    <li>
+      <a class="hero-door hero-door--slate" href="國考/獸醫藥理學/index.html">
+        <div class="hero-door__body">
+          <span class="hero-door__index">02</span>
+          <span class="hero-door__kicker">Veterinary Pharmacology</span>
+          <h3 class="hero-door__title">獸醫藥理學</h3>
+          <p class="hero-door__desc">藥動／藥效學、各系統用藥、抗微生物與抗寄生蟲藥、毒理。</p>
+          <p class="hero-door__empty">尚無筆記，整理中。</p>
+          <span class="hero-door__link">前往頁面 →</span>
+        </div>
+      </a>
+    </li>
+    <li>
+      <a class="hero-door hero-door--amber" href="國考/獸醫實驗診斷學/index.html">
+        <div class="hero-door__body">
+          <span class="hero-door__index">03</span>
+          <span class="hero-door__kicker">Veterinary Laboratory Diagnosis</span>
+          <h3 class="hero-door__title">獸醫實驗診斷學</h3>
+          <p class="hero-door__desc">臨床病理（血液、生化、尿液、細胞學）、微生物與寄生蟲檢驗、免疫診斷。</p>
+          <p class="hero-door__empty">尚無筆記，整理中。</p>
+          <span class="hero-door__link">前往頁面 →</span>
+        </div>
+      </a>
+    </li>
+    <li>
+      <a class="hero-door hero-door--green" href="國考/獸醫普通疾病學/index.html">
+        <div class="hero-door__body">
+          <span class="hero-door__index">04</span>
+          <span class="hero-door__kicker">Veterinary General Medicine</span>
+          <h3 class="hero-door__title">獸醫普通疾病學</h3>
+          <p class="hero-door__desc">內科、外科、產科與繁殖、影像診斷等非傳染性疾病。</p>
+          <p class="hero-door__empty">尚無筆記，整理中。</p>
+          <span class="hero-door__link">前往頁面 →</span>
+        </div>
+      </a>
+    </li>
+    <li>
+      <a class="hero-door hero-door--rust" href="國考/獸醫傳染病學/index.html">
+        <div class="hero-door__body">
+          <span class="hero-door__index">05</span>
+          <span class="hero-door__kicker">Veterinary Infectious Diseases</span>
+          <h3 class="hero-door__title">獸醫傳染病學</h3>
+          <p class="hero-door__desc">各物種病毒、細菌、黴菌與寄生蟲性傳染病的病原、症狀、診斷與防治。</p>
+          <p class="hero-door__empty">已整理：豬病學統整（歷屆國考題 607 題含詳解）、禽病學統整（554 題）、統整表格</p>
+          <span class="hero-door__link">前往頁面 →</span>
+        </div>
+      </a>
+    </li>
+    <li>
+      <a class="hero-door hero-door--slate" href="國考/獸醫公共衛生學/index.html">
+        <div class="hero-door__body">
+          <span class="hero-door__index">06</span>
+          <span class="hero-door__kicker">Veterinary Public Health</span>
+          <h3 class="hero-door__title">獸醫公共衛生學</h3>
+          <p class="hero-door__desc">人畜共通傳染病、食品衛生與安全、流行病學、獸醫相關法規。</p>
+          <p class="hero-door__empty">尚無筆記，整理中。</p>
+          <span class="hero-door__link">前往頁面 →</span>
+        </div>
+      </a>
+    </li>
+      <li>
+      <a class="hero-door hero-door--amber" href="國考/專題/index.html">
+        <div class="hero-door__body">
+          <span class="hero-door__index">專題</span>
+          <span class="hero-door__kicker">Cross-subject Topics</span>
+          <h3 class="hero-door__title">跨科專題</h3>
+          <p class="hero-door__desc">不限單一考科的整理，把各科各動物的知識放在同一個主題下比較。</p>
+          <p class="hero-door__empty">已整理：病毒科與核酸類型</p>
+          <span class="hero-door__link">前往頁面 →</span>
+        </div>
+      </a>
+    </li>
+  </ul>
+</main>
+
+<footer class="sitefoot">
+  <div class="sitefoot__inner">本站內容為個人課堂筆記整理，僅供學習與複習使用，不作為正式臨床診斷或用藥依據。</div>
+</footer>
+
+<script src="assets/site.js"></script>
+<script src="search-index.js"></script>
+<script src="assets/global-search.js"></script>
+<script src="assets/nav-data.js"></script>
+<script src="assets/nav.js"></script>
+<script>
+const SITE_ROOT = "";
+initGlobalSearch('searchInput', 'searchResults');
+initSiteNav('siteNav', 'navPanel');
+</script>
+
+</body>
+</html>

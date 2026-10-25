@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="zh-TW" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>大動物外科：縫合材料、縫針與結紮技術 - yc._vetalk</title>
+<link rel="stylesheet" href="../../assets/nav.css">
+<link rel="stylesheet" href="../../assets/ah.css?v=4">
+</head>
+<body class="ah">
+
+<header>
+  <a class="header-brand" href="../../index.html">
+    <h1>yc._vetalk</h1>
+    <div class="subtitle">DVM Course Notes · 大一～大四</div>
+  </a>
+  <div class="site-nav" id="siteNav" data-base="../../" data-current="大四"></div>
+  <div class="header-right">
+    <div class="search-wrap">
+      <span class="search-icon">🔍</span>
+      <input type="text" id="searchInput" placeholder="搜尋本頁內容..." oninput="doSearch(this.value)" autocomplete="off">
+      <div id="searchResults" class="search-results"></div>
+    </div>
+    <button class="theme-btn" id="themeBtn" onclick="toggleTheme()" title="切換深色/淺色模式">🌙</button>
+  </div>
+</header>
+<div class="nav-panel" id="navPanel"></div>
+
+<section class="pagehead">
+  <div class="pagehead__inner">
+    <div class="breadcrumb">
+      <a href="../../index.html">網頁筆記首頁</a><span class="sep">›</span><a href="index.html">大動物外科手術及實習</a><span class="sep">›</span><span class="current">第 1 週・縫合材料與結紮技術（實習）</span>
+    </div>
+    <div class="page-head">
+      <h1 class="page-title">縫合材料、縫針與結紮技術</h1>
+      <p class="page-subtitle">Suture Materials, Needle, Knots and Ligatures · 實習講義</p>
+    </div>
+    <div class="meta-bar">
+      <div class="meta-item"><div class="meta-label">科目</div><div class="meta-value">大動物外科手術及實習（大四上・第1週・實習）</div></div>
+      <div class="meta-item"><div class="meta-label">資料來源</div><div class="meta-value">《大動物外科學》第 1 週實習講義〈Suture materials, needle, knots and ligatures〉（Yu Pin-Huan, NTU）</div></div>
+      <div class="meta-item"><div class="meta-label">最後更新</div><div class="meta-value">2026-09-16</div></div>
+      <div class="meta-item"><div class="meta-label">整理狀態</div><div class="meta-value">完整筆記</div></div>
+    </div>
+  </div>
+</section>
+
+<div class="pagewrap">
+  <nav class="toc">
+    <div class="section-label">總覽</div>
+    <a class="active" onclick="showSection('overview')" id="nav-overview">
+      <span class="nav-icon">🧵</span> 縫線材質總論
+    </a>
+    <div class="section-label" style="margin-top:8px;">材質與選擇</div>
+    <a onclick="showSection('structure')" id="nav-structure">
+      <span class="nav-icon">🔗</span> 縫線結構
+    </a>
+    <a onclick="showSection('materials')" id="nav-materials">
+      <span class="nav-icon">📋</span> 材質比較表
+    </a>
+    <a onclick="showSection('choice')" id="nav-choice">
+      <span class="nav-icon">⚖️</span> 縫線的選擇
+    </a>
+    <a onclick="showSection('size')" id="nav-size">
+      <span class="nav-icon">📏</span> 縫線尺寸
+    </a>
+    <div class="section-label" style="margin-top:8px;">器械</div>
+    <a onclick="showSection('needle')" id="nav-needle">
+      <span class="nav-icon">📍</span> 縫合針 Needles
+    </a>
+    <a onclick="showSection('label')" id="nav-label">
+      <span class="nav-icon">🏷️</span> 判讀縫線包裝
+    </a>
+    <div class="section-label" style="margin-top:8px;">縫合技術</div>
+    <a onclick="showSection('patterns')" id="nav-patterns">
+      <span class="nav-icon">🪡</span> 縫合模式
+    </a>
+    <div class="section-label" style="margin-top:8px;">複習</div>
+    <a onclick="showSection('quiz')" id="nav-quiz">
+      <span class="nav-icon">📝</span> 練習題
+    </a>
+  </nav>
+
+  <main class="pagebody" id="mainContent">
+
+    <!-- OVERVIEW -->
+    <div class="section" id="section-overview">
+      <div class="section-head"><div class="section-num">1</div><h2>縫線材質總論</h2></div>
+      <p class="section-desc">本份為第 1 週實習講義〈Suture materials, needle, knots and ligatures〉整理，聚焦於縫線材質、縫合針、縫合模式的選擇邏輯，與課堂講義〈術前考量與麻醉〉互為當週的理論／實作兩份文件。</p>
+
+      <h3>理想縫線的特性</h3>
+      <ul>
+        <li>對組織造成<strong>最小的反應</strong>（minimal tissue reaction）</li>
+        <li>不會製造<strong>有利細菌生長</strong>的環境</li>
+        <li>不導電（nonelectrolytic）、不具毛細作用（noncapillary）、不致敏（nonallergenic）、不致癌（noncarcinogenic）</li>
+        <li>操作手感佳，外科醫師使用<strong>舒適</strong></li>
+        <li><strong>打結牢固</strong>，不會割斷或磨損</li>
+        <li>不再需要時能<strong>自行消失</strong></li>
+        <li><strong>經濟實惠</strong></li>
+      </ul>
+
+      <h3>可吸收 vs. 不可吸收</h3>
+      <div class="grid-2">
+        <div class="card">
+          <div class="card-title">Absorbable suture 可吸收縫線</div>
+          <ul>
+            <li>透過<strong>水解（hydrolyzed）</strong>分解</li>
+            <li>傷口癒合後即消失，不需拆線</li>
+          </ul>
+        </div>
+        <div class="card">
+          <div class="card-title">Non-absorbable suture 不可吸收縫線</div>
+          <ul>
+            <li><strong>保留張力強度</strong>超過 60 天</li>
+            <li>需另外拆線或永久留在體內（如血管、疝氣修補）</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- STRUCTURE -->
+    <div class="section" id="section-structure">
+      <div class="section-head"><div class="section-num">2</div><h2>縫線結構 Suture Structure</h2></div>
+      <p class="section-desc">依線材的物理結構分為多股（multifilament）與單股（monofilament），兩者在細菌親和性與組織拖曳感上有明顯差異。</p>
+
+      <div class="grid-2">
+        <div class="card">
+          <div class="card-title">Multifilament 多股線</div>
+          <p>由多股細絲<strong>絞合（twisted）</strong>或<strong>編織（braided）</strong>而成。</p>
+          <div class="alert alert-warn">
+            <div class="alert-label">注意</div>
+            <p>股與股之間的縫隙容易<strong>藏匿細菌</strong>，可能加重感染（harbor bacteria and potentiate infection）。</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-title">Monofilament 單股線</div>
+          <p>通常為<strong>合成材質</strong>，線體本身為單一實心纖維。</p>
+          <div class="alert alert-success">
+            <div class="alert-label">重點</div>
+            <p>組織反應較小、毛細作用（capillarity）較低，較不利細菌沿線體擴散。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MATERIALS TABLE -->
+    <div class="section" id="section-materials">
+      <div class="section-head"><div class="section-num">3</div><h2>縫線材質比較表</h2></div>
+      <p class="section-desc">臨床常見縫線材質的成分、特性與優缺點比較，是選擇縫線的核心依據。</p>
+
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>縫線</th><th>材質</th><th>特性</th><th>優點</th><th>缺點</th></tr></thead>
+          <tbody>
+            <tr>
+              <td><strong>Surgical gut</strong><br>手術腸線</td>
+              <td>來自羊小腸黏膜下層的天然膠原蛋白</td>
+              <td>快速吸收；經酵素消化</td>
+              <td>經濟、操作手感佳、略有彈性</td>
+              <td>潮濕時打結強度下降；3–7 天內即失去強度；組織反應較大</td>
+            </tr>
+            <tr>
+              <td><strong>Polyglycolic acid</strong><br>（Dexon）</td>
+              <td>glycolic acid 聚合物</td>
+              <td>合成、編織、可吸收；水解為天然代謝物</td>
+              <td>不致敏、遇濕不腫脹、組織反應小、打結牢固、操作手感佳</td>
+              <td>有組織拖曳感（tissue drag）、具毛細作用</td>
+            </tr>
+            <tr>
+              <td><strong>Polyglactin 910</strong><br>（Vicryl）</td>
+              <td>glycolic acid 與 lactic acid 以 90:10 比例聚合</td>
+              <td>合成、編織、可吸收；水解為天然代謝物</td>
+              <td>同 Polyglycolic acid</td>
+              <td>同 Polyglycolic acid</td>
+            </tr>
+            <tr>
+              <td><strong>Polyglactin 910</strong><br>（Vicryl Rapide）</td>
+              <td>同 Polyglactin 910</td>
+              <td>同 Polyglactin 910</td>
+              <td>吸收更快（5 天強度剩 50%，一般 Vicryl 為 3 週）</td>
+              <td>不可用於需要<strong>長時間維持強度</strong>的部位</td>
+            </tr>
+            <tr>
+              <td><strong>Polydioxanone</strong><br>（PDS II）</td>
+              <td>paradioxanone 均聚物</td>
+              <td>合成、單股、可吸收；水解為天然代謝物</td>
+              <td>組織拖曳感小、較不易加重感染、體內維持時間長、斷裂強度高</td>
+              <td>質地較脆、打結處容易斷裂</td>
+            </tr>
+            <tr>
+              <td><strong>Polydioxanone antibacterial</strong><br>（PDS Plus / Triclosan）</td>
+              <td>同 Polydioxanone</td>
+              <td>同 Polydioxanone</td>
+              <td>同 Polydioxanone，額外提供局部抗菌效果</td>
+              <td>同 Polydioxanone</td>
+            </tr>
+            <tr>
+              <td><strong>Polyglyconate</strong><br>（Maxon）</td>
+              <td>trimethylene carbonate 與 glycolide 共聚物</td>
+              <td>合成、單股、可吸收；經水解降解</td>
+              <td>同 Polydioxanone</td>
+              <td>斷裂強度較低、質地較硬、機械性質略遜於 PDS</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- CHOICE -->
+    <div class="section" id="section-choice">
+      <div class="section-head"><div class="section-num">4</div><h2>縫線的選擇 Choice of Suture Material</h2></div>
+      <p class="section-desc">選擇縫線並非單看材質優劣，而是綜合手術者經驗、組織癒合特性、動物個體因素與傷口情境的整體判斷。</p>
+
+      <h3>基本考量因子</h3>
+      <ul>
+        <li>外科醫師的<strong>經驗</strong></li>
+        <li>對<strong>受縫組織／器官癒合特性</strong>的了解</li>
+        <li>對<strong>各種縫線材質物理／生物特性</strong>的了解</li>
+        <li>動物因子：<strong>年齡、體重、整體健康狀況、是否有感染</strong></li>
+      </ul>
+
+      <h3>癒合速度</h3>
+      <p><strong>內臟傷口（visceral wound）與表淺傷口（superficial wound）</strong>通常癒合快速，縫線不需長時間維持張力。</p>
+
+      <h3>結晶尿（Crystalloid）存在的部位</h3>
+      <div class="alert alert-warn">
+        <div class="alert-label">注意</div>
+        <p><strong>膀胱（bladder）</strong>手術須留意——某些縫線材質可能成為<strong>尿路結石（urinary calculus）</strong>形成的核心，選線時需特別考量。</p>
+      </div>
+
+      <h3>感染傷口（Infected wound）</h3>
+      <ul>
+        <li><strong>Chromic gut</strong>：具局部吞噬細胞活性（local phagocytic activity），感染傷口使用需謹慎</li>
+        <li><strong>編織／多股線（braided or multifilament suture）</strong>：容易藏匿細菌（bacterial harboring），感染傷口應避免使用，優先考慮單股線</li>
+      </ul>
+    </div>
+
+    <!-- SIZE -->
+    <div class="section" id="section-size">
+      <div class="section-head"><div class="section-num">5</div><h2>縫線尺寸 Size Does Matter</h2></div>
+      <p class="section-desc">縫線尺寸的選擇原則：夠用就好，越細越好。</p>
+
+      <div class="card">
+        <div class="card-title">核心原則</div>
+        <p>公認的外科操作原則是：使用<strong>足以牢牢固定傷口組織的最小直徑縫線</strong>。</p>
+        <ul>
+          <li>降低對組織的<strong>創傷（trauma）</strong></li>
+          <li>縫線的<strong>張力強度不應超過組織本身的張力強度</strong></li>
+          <li>過粗的縫線會增加<strong>組織反應</strong>、<strong>壓迫血液供應</strong>、<strong>延遲癒合</strong></li>
+        </ul>
+      </div>
+
+      <h3>縫線號數（Gauge）</h3>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>號數方向</th><th>號數範例</th><th>用途</th></tr></thead>
+          <tbody>
+            <tr><td>越粗 ⬆</td><td>2、1、0</td><td>Thick，一般大動物大範圍組織／張力較大部位</td></tr>
+            <tr><td>中等</td><td>00、000、0000</td><td>一般軟組織縫合</td></tr>
+            <tr><td>偏細</td><td>3/0–6/0</td><td>Minor surgery，小範圍精細縫合</td></tr>
+            <tr><td>越細 ⬇</td><td>7/0–10/0</td><td>Fine，顯微手術（microsurgery）</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p style="font-size:.85em; color:var(--fg-faint);">※ 傳統系統（traditional system）號數越多「0」，代表線徑越細；數字（如 2、1）越大代表線徑越粗。</p>
+    </div>
+
+    <!-- NEEDLE -->
+    <div class="section" id="section-needle">
+      <div class="section-head"><div class="section-num">6</div><h2>縫合針 Needles</h2></div>
+      <p class="section-desc">縫合針的選擇同樣要對應組織種類：質地堅韌的皮膚需要能切割的針尖，脆弱的內臟組織則需要能撥開而非切割的針尖。</p>
+
+      <h3>理想縫合針特性</h3>
+      <ul>
+        <li>以<strong>最小的阻力與創傷</strong>穿過組織</li>
+        <li><strong>堅硬（rigid）</strong>：防止彎曲</li>
+        <li><strong>有彈性（flexible）</strong>：防止斷裂</li>
+        <li><strong>清潔且抗腐蝕</strong></li>
+      </ul>
+
+      <h3>針尖型態（Point Type）</h3>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>針尖型態</th><th>特徵</th><th>臨床補充：常見適用情境</th></tr></thead>
+          <tbody>
+            <tr><td><strong>Conventional cutting</strong><br>傳統切割針</td><td>三角形斷面，切割刃朝向縫線內側（凹面）</td><td>皮膚等緻密組織；若操作方向不當，切割刃朝內容易反向撕裂組織，臨床已逐漸少用</td></tr>
+            <tr><td><strong>Reverse cutting</strong><br>反向切割針</td><td>三角形斷面，切割刃朝向縫線外側（凸面）</td><td>目前皮膚縫合最常用的切割針，較不易造成組織撕裂</td></tr>
+            <tr><td><strong>Taper point</strong><br>圓針</td><td>針體為圓形，無切割刃，以推開方式穿過組織</td><td>容易穿透的組織，如筋膜、肌肉、腸胃道、皮下組織；創傷最小</td></tr>
+            <tr><td><strong>Taper cut</strong></td><td>針體為圓形（taper），但針尖具切割刃</td><td>質地較韌但仍需降低創傷的組織，如肌腱、緻密筋膜</td></tr>
+            <tr><td><strong>Special K needle</strong><br>（Deknatel Inc.）</td><td>反向切割針的變化型，切割幾何設計更有效率</td><td>特定廠牌設計，用途與 reverse cutting 相近</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3>針體形狀（Body Shape）</h3>
+      <div class="grid-3">
+        <div class="card"><div class="card-title">1/4 circle</div><p>弧度最小，用於表淺、容易接近的部位</p></div>
+        <div class="card"><div class="card-title">3/8 circle</div><p>最常用的通用弧度，皮膚／皮下組織</p></div>
+        <div class="card"><div class="card-title">1/2 circle</div><p>深部或空間受限部位，操作控制性較佳</p></div>
+        <div class="card"><div class="card-title">5/8 circle</div><p>非常深或狹小空間，如骨盆腔、口腔</p></div>
+        <div class="card"><div class="card-title">1/2 curve（複合彎）</div><p>特殊用途，如眼科手術</p></div>
+        <div class="card"><div class="card-title">Straight 直針</div><p>不需持針器、徒手操作，用於皮膚或特定腸道/肌腱修補技術</p></div>
+      </div>
+
+      <h3>針的解剖構造</h3>
+      <p>縫合針由三部分組成：<strong>Point（針尖）</strong>、<strong>Shaft／Body（針體）</strong>、<strong>Swag（含線端／針線接合處）</strong>。目前臨床多使用 swaged-on（針線一體）縫合針，減少穿針孔造成的額外組織創傷。</p>
+    </div>
+
+    <!-- LABEL -->
+    <div class="section" id="section-label">
+      <div class="section-head"><div class="section-num">7</div><h2>判讀縫線包裝標示</h2></div>
+      <p class="section-desc">臨床取用縫線前，務必核對包裝上的完整標示，避免拿錯材質、尺寸或針型。以 Vicryl Rapide 2-0 包裝為例：</p>
+
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>標示項目</th><th>範例判讀</th></tr></thead>
+          <tbody>
+            <tr><td><strong>Suture Size 縫線尺寸</strong></td><td>2-0（公制 3.0 metric）</td></tr>
+            <tr><td><strong>Suture Type 縫線種類</strong></td><td>Vicryl Rapide（Polyglactin 910）</td></tr>
+            <tr><td><strong>Braided or Non-braided</strong><br>編織或非編織</td><td>Braided（編織／多股）</td></tr>
+            <tr><td><strong>Natural or Synthetic</strong><br>天然或合成</td><td>Synthetic（合成）</td></tr>
+            <tr><td><strong>Absorbable or Non-absorbable</strong><br>可吸收或不可吸收</td><td>Absorbable（可吸收）</td></tr>
+            <tr><td><strong>Suture Needle 縫合針</strong></td><td>CT-1，Taper，1/2 circle，36 mm</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="alert alert-info">
+        <div class="alert-label">補充</div>
+        <p>包裝上同時會標示縫線長度（如 36"／90 cm）、是否染色（undyed）、滅菌狀態（sterile）與批號效期，取用前建議養成核對習慣。</p>
+      </div>
+    </div>
+
+    <!-- PATTERNS -->
+    <div class="section" id="section-patterns">
+      <div class="section-head"><div class="section-num">8</div><h2>縫合模式 Suture Patterns</h2></div>
+      <p class="section-desc">依傷口部位、張力需求與組織特性選擇適合的縫合模式，是縫合技術的核心判斷。</p>
+
+      <h3>單純縫合（Simple Patterns）</h3>
+      <div class="grid-2">
+        <div class="card">
+          <div class="card-title">Simple interrupted suture 單純間斷縫合</div>
+          <ul>
+            <li><strong>最廣泛使用</strong>的縫合模式</li>
+            <li>使傷口邊緣互相對合（appose wound margins）</li>
+            <li>縫線之間的間距，應為<strong>縫合點到傷口邊緣距離的兩倍</strong>（bite ratio 概念）</li>
+          </ul>
+        </div>
+        <div class="card">
+          <div class="card-title">Simple continuous suture 單純連續縫合</div>
+          <ul>
+            <li>具彈性（elastic suture）</li>
+            <li>若連續線中<strong>任一針斷裂</strong>，整條縫線的張力都會喪失</li>
+            <li>常用於<strong>腸道吻合（bowel anastomosis）</strong>：異物殘留少（降低污染與沾黏風險）、縫合速度較快</li>
+          </ul>
+        </div>
+      </div>
+
+      <h3>張力減壓模式（Tension-Relieving Patterns）</h3>
+      <div class="grid-2">
+        <div class="card">
+          <div class="card-title">Interrupted horizontal mattress 間斷水平褥式</div>
+          <ul>
+            <li>外翻縫合（everting）</li>
+            <li><strong>最佳減張效果</strong>的縫合模式</li>
+            <li>缺點：可能降低局部血液供應</li>
+            <li>適用：肌肉層對合（muscle belly reapposition）</li>
+          </ul>
+        </div>
+        <div class="card">
+          <div class="card-title">Vertical mattress suture 垂直褥式</div>
+          <ul>
+            <li>相較水平褥式，<strong>血液循環較佳</strong></li>
+            <li>適用：四肢裂傷（limb laceration）</li>
+          </ul>
+        </div>
+      </div>
+
+      <h3>中空器官縫合（Closure of Hollow Organ）</h3>
+      <p>需<strong>仔細謹慎</strong>操作，以內翻或對合方式（inverting or opposing）縫合，透過纖維蛋白凝塊（fibrin clot）防止內容物滲漏（prevent leakage）。腸胃道組織強韌且柔軟（strong, pliable），子宮組織則較脆弱（friable）但癒合快速（heal quickly）。</p>
+
+      <div class="grid-2">
+        <div class="card">
+          <div class="card-title">Lambert pattern</div>
+          <p>內翻縫合模式，常用於胃（stomach）、瘤胃（rumen）、子宮（uterus）的漿膜肌層縫合；操作時需注意縫線直徑與組織厚度的搭配（diameter compromise）。</p>
+        </div>
+        <div class="card">
+          <div class="card-title">Cushing pattern</div>
+          <p>最小程度的內翻縫合，常作為<strong>雙層縫合（double layer closure）</strong>的外層；操作時須留意對血液供應的影響。</p>
+        </div>
+      </div>
+
+      <h3>其他特殊縫合模式</h3>
+      <div class="grid-2">
+        <div class="card">
+          <div class="card-title">Purse string suture 荷包縫合</div>
+          <p>環繞開口做環狀縫合並收緊，用於閉合圓形開口或固定管路（如造口周圍、腸道斷端內翻閉合）。</p>
+        </div>
+        <div class="card">
+          <div class="card-title">Transfix ligature 貫穿結紮</div>
+          <ul>
+            <li>先以縫針貫穿組織後再環繞打結，<strong>防止滑脫（prevent slipping）</strong></li>
+            <li>比單純結紮提供更佳的摩擦力與抗張力（friction and tensile strength）</li>
+            <li>操作原則：儘量<strong>減少殘留在斷端（stump）的組織量</strong></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- QUIZ -->
+    <div class="section" id="section-quiz">
+      <div class="section-head"><div class="section-num">9</div><h2>練習題 Practice Quiz</h2></div>
+      <p class="section-desc">涵蓋縫線材質、縫合針與縫合模式重點，先自己作答再點「顯示答案」核對。</p>
+
+      <div class="quiz-item">
+        <span class="quiz-type quiz-type-tf">是非題</span>
+        <div class="quiz-q">Q1. 多股（multifilament）編織縫線因為表面積大、手感較好，臨床上比單股線更適合用於已感染的傷口。</div>
+        <details class="quiz-reveal">
+          <summary></summary>
+          <div class="quiz-answer false">答案：FALSE</div>
+          <p class="quiz-explain">編織／多股線股與股之間的縫隙容易藏匿細菌，加重感染，感染傷口應優先選擇單股（monofilament）線，而非多股編織線。</p>
+        </details>
+      </div>
+
+      <div class="quiz-item">
+        <span class="quiz-type quiz-type-tf">是非題</span>
+        <div class="quiz-q">Q2. 縫線的選擇原則是儘量使用最粗的縫線，以確保傷口張力足夠、不易裂開。</div>
+        <details class="quiz-reveal">
+          <summary></summary>
+          <div class="quiz-answer false">答案：FALSE</div>
+          <p class="quiz-explain">公認的外科原則是使用「足以牢固組織的最小直徑縫線」，而非越粗越好；過粗的縫線反而會增加組織反應、壓迫血液供應、延遲癒合。</p>
+        </details>
+      </div>
+
+      <div class="quiz-item">
+        <span class="quiz-type quiz-type-tf">是非題</span>
+        <div class="quiz-q">Q3. Vicryl Rapide 因為吸收速度比一般 Vicryl 快很多，適合用於需要長時間維持張力強度的部位。</div>
+        <details class="quiz-reveal">
+          <summary></summary>
+          <div class="quiz-answer false">答案：FALSE</div>
+          <p class="quiz-explain">Vicryl Rapide 5 天強度即剩 50%（一般 Vicryl 約 3 週才降至此程度），吸收速度快，正因如此不應用於需要長時間維持強度的部位。</p>
+        </details>
+      </div>
+
+      <div class="quiz-item">
+        <span class="quiz-type quiz-type-mcq">選擇題</span>
+        <div class="quiz-q">Q4. 進行膀胱手術時，選擇縫線材質須特別留意下列哪一項？</div>
+        <ul class="quiz-options">
+          <li>(A) 縫線是否染色</li>
+          <li>(B) 縫線是否可能成為尿路結石形成的核心</li>
+          <li>(C) 縫線包裝是否為無菌包裝</li>
+          <li>(D) 縫線是否為天然材質</li>
+        </ul>
+        <details class="quiz-reveal">
+          <summary></summary>
+          <div class="quiz-answer correct">答案：(B)</div>
+          <p class="quiz-explain">膀胱等有結晶尿（crystalloid）存在的部位，某些縫線材質可能成為尿路結石（urinary calculus）形成的核心，選線時需特別考量此風險。</p>
+        </details>
+      </div>
+
+      <div class="quiz-item">
+        <span class="quiz-type quiz-type-mcq">選擇題</span>
+        <div class="quiz-q">Q5. 下列哪一種縫合針最適合用於腸胃道等容易穿透、需要降低組織創傷的軟組織？</div>
+        <ul class="quiz-options">
+          <li>(A) Conventional cutting（傳統切割針）</li>
+          <li>(B) Reverse cutting（反向切割針）</li>
+          <li>(C) Taper point（圓針）</li>
+          <li>(D) Taper cut</li>
+        </ul>
+        <details class="quiz-reveal">
+          <summary></summary>
+          <div class="quiz-answer correct">答案：(C)</div>
+          <p class="quiz-explain">Taper point 針體為圓形、無切割刃，以推開而非切割的方式穿過組織，創傷最小，適合腸胃道、筋膜、肌肉等容易穿透的軟組織；切割針（cutting）主要用於皮膚等較緻密的組織。</p>
+        </details>
+      </div>
+
+      <div class="quiz-item">
+        <span class="quiz-type quiz-type-mcq">選擇題</span>
+        <div class="quiz-q">Q6. 關於單純連續縫合（simple continuous suture）的敘述，下列何者正確？</div>
+        <ul class="quiz-options">
+          <li>(A) 若其中一針斷裂，只有該針附近會裂開，其餘縫線張力不受影響</li>
+          <li>(B) 常用於腸道吻合，因為異物殘留較少、縫合速度較快</li>
+          <li>(C) 是張力減壓效果最佳的縫合模式</li>
+          <li>(D) 只能用於表淺皮膚縫合</li>
+        </ul>
+        <details class="quiz-reveal">
+          <summary></summary>
+          <div class="quiz-answer correct">答案：(B)</div>
+          <p class="quiz-explain">單純連續縫合具彈性，但若其中一針斷裂，整條縫線的張力都會喪失（並非只有局部受影響）；因異物殘留少、縫合速度快，常用於腸道吻合。張力減壓效果最佳的是間斷水平褥式縫合。</p>
+        </details>
+      </div>
+
+      <div class="quiz-item">
+        <span class="quiz-type quiz-type-saq">簡答題</span>
+        <div class="quiz-q">Q7. 間斷水平褥式縫合（interrupted horizontal mattress）與垂直褥式縫合（vertical mattress）在血液供應上的差異是什麼？各自的臨床適用情境為何？</div>
+        <details class="quiz-reveal">
+          <summary></summary>
+          <p class="quiz-explain">水平褥式縫合的減張效果最佳，但因縫線走向與傷口平行、包覆組織範圍較大，容易壓迫並降低局部血液供應，適用於需要對合肌肉層（muscle belly reapposition）的情況；垂直褥式縫合則因縫線走向與傷口垂直，對血液循環的影響較小，血液循環較佳，適用於四肢裂傷（limb laceration）等需要兼顧減張與血液供應的部位。</p>
+        </details>
+      </div>
+
+      <div class="quiz-item">
+        <span class="quiz-type quiz-type-saq">簡答題</span>
+        <div class="quiz-q">Q8. Transfix ligature（貫穿結紮）與單純結紮相比，優勢是什麼？操作時有什麼原則？</div>
+        <details class="quiz-reveal">
+          <summary></summary>
+          <p class="quiz-explain">Transfix ligature 是先以縫針貫穿組織後再環繞打結，比單純環繞結紮多了組織貫穿這一步，能提供更佳的摩擦力與抗張力，防止縫線在血管或蒂部滑脫，特別適合較大、張力較高的血管蒂或組織斷端。操作原則是儘量減少殘留在斷端（stump）的組織量，避免留下過多壞死組織增加感染風險。</p>
+        </details>
+      </div>
+
+      <footer class="note-footer">
+        練習題涵蓋本份實習講義各章節重點，答案與解析僅供自我複習參考。
+      </footer>
+    </div>
+
+    <footer class="note-footer">
+      資料來源：《大動物外科學》第 1 週實習講義〈Suture materials, needle, knots and ligatures〉（Yu Pin-Huan, NTU）。本頁為個人課堂筆記整理，僅供學習與複習使用，<strong>不作為正式臨床操作依據</strong>。
+    </footer>
+
+  </main>
+</div>
+
+<script>
+function showSection(id) {
+  const el = document.getElementById('section-' + id);
+  if (el) el.scrollIntoView({ block: 'start' });
+  setActive(id);
+}
+function setActive(id) {
+  document.querySelectorAll('nav.toc a').forEach(a => a.classList.remove('active'));
+  const a = document.getElementById('nav-' + id);
+  if (a) a.classList.add('active');
+}
+(function () {
+  const secs = [...document.querySelectorAll('.section[id^="section-"]')];
+  const io = new IntersectionObserver(es => {
+    es.forEach(e => { if (e.isIntersecting) setActive(e.target.id.replace('section-', '')); });
+  }, { rootMargin: '-15% 0px -75% 0px' });
+  secs.forEach(sec => io.observe(sec));
+})();
+function toggleTheme() {
+  const html = document.documentElement, btn = document.getElementById('themeBtn');
+  const isDark = html.getAttribute('data-theme') === 'dark';
+  html.setAttribute('data-theme', isDark ? 'light' : 'dark');
+  btn.textContent = isDark ? '🌙' : '☀️';
+  localStorage.setItem('theme', isDark ? 'light' : 'dark');
+}
+(function(){ const t=localStorage.getItem('theme'); if(t){ document.documentElement.setAttribute('data-theme',t); document.getElementById('themeBtn').textContent = t==='dark'?'☀️':'🌙'; } })();
+
+document.addEventListener('DOMContentLoaded', function () {
+  if (location.hash && location.hash.indexOf('#section-') === 0) {
+    const id = location.hash.replace('#section-', '');
+    if (document.getElementById('section-' + id)) showSection(id);
+  }
+});
+
+const SECTION_NAMES = {
+  overview: '縫線材質總論',
+  structure: '縫線結構',
+  materials: '材質比較表',
+  choice: '縫線的選擇',
+  size: '縫線尺寸',
+  needle: '縫合針',
+  label: '判讀縫線包裝',
+  patterns: '縫合模式',
+  quiz: '練習題'
+};
+
+document.addEventListener('click', function (e) {
+  if (!e.target.closest('.search-wrap')) closeSearch();
+});
+
+function closeSearch() {
+  document.getElementById('searchResults').classList.remove('open');
+  document.getElementById('searchInput').classList.remove('has-results');
+}
+
+function doSearch(q) {
+  const resultsBox = document.getElementById('searchResults');
+  const input = document.getElementById('searchInput');
+  q = q.trim();
+
+  if (!q) { closeSearch(); resultsBox.innerHTML = ''; return; }
+
+  const reg = new RegExp('(' + q.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + ')', 'gi');
+  const results = [];
+
+  document.querySelectorAll('.section').forEach(section => {
+    const sectionId = section.id.replace('section-', '');
+    const sectionName = SECTION_NAMES[sectionId] || sectionId;
+
+    section.querySelectorAll('td, li, p, h3, h4, .step-text, .card-title, .quiz-q, .quiz-explain, .figure-caption').forEach(el => {
+      if (el.closest('script') || el.closest('style')) return;
+      const text = el.textContent.trim();
+      reg.lastIndex = 0;
+      if (text && reg.test(text)) {
+        reg.lastIndex = 0;
+        const idx = text.search(reg);
+        const start = Math.max(0, idx - 30);
+        const end = Math.min(text.length, idx + 60);
+        let snippet = (start > 0 ? '…' : '') + text.slice(start, end) + (end < text.length ? '…' : '');
+        snippet = snippet.replace(reg, '<mark>$1</mark>');
+        results.push({ sectionId, sectionName, snippet });
+        reg.lastIndex = 0;
+      }
+    });
+  });
+
+  if (results.length === 0) {
+    resultsBox.innerHTML = '<div class="sr-empty">找不到「' + q + '」相關結果</div>';
+    resultsBox.classList.add('open');
+    input.classList.add('has-results');
+    return;
+  }
+
+  const bySection = {};
+  results.forEach(r => {
+    if (!bySection[r.sectionId]) bySection[r.sectionId] = { name: r.sectionName, items: [] };
+    if (bySection[r.sectionId].items.length < 4) bySection[r.sectionId].items.push(r.snippet);
+  });
+
+  let html = '';
+  let total = 0;
+  Object.keys(bySection).forEach(sid => {
+    const group = bySection[sid];
+    total += group.items.length;
+    html += '<div class="sr-header">' + group.name + '</div>';
+    group.items.forEach(snippet => {
+      html += '<div class="sr-item" onclick="showSection(\'' + sid + '\'); closeSearch();"><span class="sr-section">' + group.name + '</span><span class="sr-text">' + snippet + '</span></div>';
+    });
+  });
+  html += '<div class="sr-count">共 ' + total + ' 筆結果</div>';
+
+  resultsBox.innerHTML = html;
+  resultsBox.classList.add('open');
+  input.classList.add('has-results');
+}
+</script>
+<script src="../../assets/nav-data.js"></script>
+<script src="../../assets/nav.js"></script>
+<script>
+initSiteNav('siteNav', 'navPanel');
+</script>
+
+</body>
+</html>

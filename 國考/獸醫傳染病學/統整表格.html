@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="zh-TW" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>統整表格 - yc._vetalk</title>
+<link rel="stylesheet" href="../../assets/nav.css">
+<link rel="stylesheet" href="../../assets/ah.css?v=4">
+</head>
+<body class="ah">
+
+<header>
+  <a class="header-brand" href="../../index.html">
+    <h1>yc._vetalk</h1>
+    <div class="subtitle">DVM Course Notes · 大一～大四</div>
+  </a>
+  <div class="site-nav" id="siteNav" data-base="../../" data-current="國考"></div>
+  <div class="header-right">
+    <div class="search-wrap">
+      <span class="search-icon">🔍</span>
+      <input type="text" id="searchInput" placeholder="搜尋本頁內容..." oninput="doSearch(this.value)" autocomplete="off">
+      <div id="searchResults" class="search-results"></div>
+    </div>
+    <button class="theme-btn" id="themeBtn" onclick="toggleTheme()" title="切換深色/淺色模式">🌙</button>
+  </div>
+</header>
+<div class="nav-panel" id="navPanel"></div>
+
+<section class="pagehead"><div class="pagehead__inner">
+<div class="breadcrumb"><a href="../../index.html">網頁筆記首頁</a><span class="sep">›</span><a href="../index.html">國考</a><span class="sep">›</span><a href="index.html">獸醫傳染病學</a><span class="sep">›</span><span class="current">統整表格</span></div>
+<div class="page-head"><h1 class="page-title">統整表格</h1><p class="page-subtitle">把分散在各週講義的內容整理成跨章節對照表；每列都連回原筆記</p></div>
+<div class="meta-bar"><div class="meta-item"><div class="meta-label">科目</div><div class="meta-value">國考・獸醫傳染病學</div></div>
+<div class="meta-item"><div class="meta-label">資料來源</div><div class="meta-value">豬病學第 6、7 週講義與歷屆國考</div></div>
+<div class="meta-item"><div class="meta-label">整理狀態</div><div class="meta-value">持續新增表格</div></div></div></div></section>
+<div class="pagewrap"><nav class="toc"><div class="section-label">統整表格</div>
+<a class="active" onclick="showSection('tox')" id="nav-tox"><span class="nav-icon">1</span> 毒素與細菌病（按疾病）</a>
+<a onclick="showSection('mode')" id="nav-mode"><span class="nav-icon">2</span> 按作用方式</a>
+<a onclick="showSection('trap')" id="nav-trap"><span class="nav-icon">3</span> 國考陷阱對照</a>
+<a onclick="showSection('fim')" id="nav-fim"><span class="nav-icon">4</span> 大腸桿菌線毛對照</a>
+<a onclick="showSection('vir')" id="nav-vir"><span class="nav-icon">5</span> 丹毒・沙門氏菌等毒力因子</a>
+<a onclick="showSection('sal')" id="nav-sal"><span class="nav-icon">6</span> 沙門氏菌：敗血型 vs 腸炎型</a>
+<a onclick="showSection('fever')" id="nav-fever"><span class="nav-icon">7</span> 發燒＋出血：豬瘟鑑別</a>
+<a onclick="showSection('diva')" id="nav-diva"><span class="nav-icon">8</span> 疫苗與 DIVA 對照</a></nav><main class="pagebody">
+<div class="section" id="section-tox"><div class="section-head"><div class="section-num">1</div><h2>毒素與細菌病總表（按疾病）</h2></div>
+<p>每個病只有一兩個招牌毒素。<strong>怎麼用：</strong>看到毒素名稱，先問「這是哪個病的？」再問「作用在哪？」兩個都對才選。標記：<span class="tag tag-exam">必考</span>＝講義畫底線或國考出過；<span class="tag tag-exam">國考陷阱</span>＝國考常拿來混淆；<span class="tag">補充</span>＝講義沒寫、我補的。</p>
+<div class="table-wrap"><table><thead><tr><th>疾病（病原）</th><th>招牌毒素／因子</th><th>作用</th><th>標記</th><th>回到筆記</th></tr></thead><tbody><tr><td>APP 胸膜肺炎</td><td><strong>Apx（I～IV）</strong></td><td>在細胞膜打洞（RTX 家族）：溶血、殺肺泡巨噬細胞與嗜中性球</td><td><span class="tag tag-exam">必考</span><span class="tag tag-exam">國考陷阱</span></td><td><a href="../../大四上/豬病學/week06_細菌性疾病I.html#section-app-path">第6週・APP 致病</a></td></tr><tr><td>萎縮性鼻炎（Bordetella）</td><td><strong>DNT</strong>、<strong>TCT</strong>；黏附因子 FHA、pertactin、線毛</td><td>DNT 損害骨形成；TCT 抑制纖毛、殺纖毛細胞</td><td><span class="tag tag-exam">必考</span><span class="tag tag-exam">國考陷阱</span></td><td><a href="../../大四上/豬病學/week06_細菌性疾病I.html#section-ar-path">第6週・AR 致病</a></td></tr><tr><td>萎縮性鼻炎（產毒型 P. multocida）</td><td><strong>PMT</strong>（146 kDa，噬菌體編碼）</td><td>骨形成減少、骨吸收增加 → 鼻甲骨永久萎縮</td><td><span class="tag tag-exam">必考</span></td><td><a href="../../大四上/豬病學/week06_細菌性疾病I.html#section-ar-path">第6週・AR 致病</a></td></tr><tr><td>新生仔豬下痢（ETEC）</td><td><strong>LT、STa、STb</strong></td><td>LT→cAMP↑；STa→cGMP↑；腸道過度分泌（分泌性下痢），絨毛不萎縮</td><td><span class="tag tag-exam">必考</span></td><td><a href="../../大四上/豬病學/week06_細菌性疾病I.html#section-ec-neo">第6週・新生仔豬下痢</a></td></tr><tr><td>水腫病（STEC／EDEC）</td><td><strong>Stx2e</strong>（志賀毒素 2e）</td><td>傷害血管內皮 → 水腫、出血（胃黏膜下層、結腸繫膜）</td><td><span class="tag tag-exam">必考</span><span class="tag tag-exam">國考陷阱</span></td><td><a href="../../大四上/豬病學/week06_細菌性疾病I.html#section-ec-pwd">第6週・離乳後下痢與水腫病</a></td></tr><tr><td>離乳後下痢（AEEC／EPEC）</td><td>沒有典型毒素；黏附因子 Eae</td><td>緊密附著、抹除微絨毛（A/E 病灶）</td><td><span class="tag">補充</span></td><td><a href="../../大四上/豬病學/week06_細菌性疾病I.html#section-ec-pwd">第6週・離乳後下痢與水腫病</a></td></tr><tr><td>滲出性表皮炎（S. hyicus）</td><td><strong>ExhA、ExhB</strong>（另有 ExhC、D；日本命名 ShetA／B）</td><td>表皮剝落毒素：使表皮細胞分離，過量皮脂與漿液滲出</td><td><span class="tag tag-exam">必考</span><span class="tag tag-exam">國考陷阱</span></td><td><a href="../../大四上/豬病學/week07_細菌性疾病II.html#section-ee">第7週・滲出性表皮炎</a></td></tr><tr><td>豬丹毒</td><td>沒有外毒素；neuraminidase、莢膜、SpaA</td><td>血管傷害、血栓；侵入與抗吞噬</td><td><span class="tag tag-exam">必考</span></td><td><a href="../../大四上/豬病學/week07_細菌性疾病II.html#section-se-clin">第7週・豬丹毒致病</a></td></tr><tr><td>沙門氏菌症</td><td>沒有典型外毒素；SPI-1／SPI-2（第三型分泌系統）、spv 質體</td><td>SPI-1 侵入細胞（膜起皺）；SPI-2 細胞內存活與全身散播；spv 使感染變全身性敗血症</td><td><span class="tag tag-exam">必考</span></td><td><a href="../../大四上/豬病學/week07_細菌性疾病II.html#section-sal-clin">第7週・沙門氏菌致病</a></td></tr><tr><td>布氏桿菌症</td><td>沒有外毒素；urease、低內毒性 LPS、VirB（第四型分泌系統）、erythritol</td><td>緩衝胃酸、逃避免疫、細胞內複製、偏好生殖組織</td><td><span class="tag tag-exam">必考</span></td><td><a href="../../大四上/豬病學/week07_細菌性疾病II.html#section-br">第7週・布氏桿菌症</a></td></tr><tr><td>Glässer 病</td><td>講義沒列特定毒素；莢膜、LOS、生物膜</td><td>躲避吞噬、侵入內皮細胞 → 漿膜發炎</td><td><span class="tag">補充</span></td><td><a href="../../大四上/豬病學/week06_細菌性疾病I.html#section-gp-agent">第6週・Glässer 病</a></td></tr></tbody></table></div>
+<p>「沒有外毒素」是依講義列出的毒力因子判斷：講義沒有明說沒有毒素，但也沒列任何毒素。</p></div>
+<div class="section" id="section-mode"><div class="section-head"><div class="section-num">2</div><h2>按作用方式整理</h2></div>
+<p>換個角度記：不背名字，先記毒素在做什麼。</p>
+<div class="table-wrap"><table><thead><tr><th>作用方式</th><th>毒素</th><th>重點</th><th>回到筆記</th></tr></thead><tbody><tr><td>在細胞膜打洞（RTX 家族）</td><td>Apx、<em>E. coli</em> HlyA</td><td>溶血、殺細胞；103 年國考「Apx 機制接近 HlyA」</td><td><a href="../../大四上/豬病學/week06_細菌性疾病I.html#section-app-path">第6週</a></td></tr><tr><td>讓腸道過度分泌</td><td>LT（cAMP）、STa（cGMP）、STb</td><td>分泌性下痢，絨毛不萎縮；LT 機制接近霍亂毒素</td><td><a href="../../大四上/豬病學/week06_細菌性疾病I.html#section-ec-neo">第6週</a></td></tr><tr><td>傷血管內皮</td><td>Stx2e</td><td>水腫病；不是讓 cAMP 上升的毒素（那是 LT）</td><td><a href="../../大四上/豬病學/week06_細菌性疾病I.html#section-ec-pwd">第6週</a></td></tr><tr><td>傷骨頭</td><td>DNT、PMT、osteotoxin</td><td>萎縮性鼻炎；PMT 才是永久進行性（PAR）的主因</td><td><a href="../../大四上/豬病學/week06_細菌性疾病I.html#section-ar-path">第6週</a></td></tr><tr><td>殺纖毛、干擾吞噬細胞</td><td>TCT、腺苷酸環化酶－溶血素</td><td>清不掉細菌</td><td><a href="../../大四上/豬病學/week06_細菌性疾病I.html#section-ar-path">第6週</a></td></tr><tr><td>剝皮（表皮剝落）</td><td>ExhA／B、ShetA／B</td><td>滲出性表皮炎；類似人類 SSSS</td><td><a href="../../大四上/豬病學/week07_細菌性疾病II.html#section-ee">第7週</a></td></tr><tr><td>沒有毒素，靠侵入或躲避</td><td>沙門氏菌（T3SS）、布氏桿菌（VirB T4SS）、豬丹毒（neuraminidase）</td><td>不要硬想成毒素</td><td><a href="../../大四上/豬病學/week07_細菌性疾病II.html#section-compare">第7週</a></td></tr></tbody></table></div></div>
+<div class="section" id="section-trap"><div class="section-head"><div class="section-num">3</div><h2>國考陷阱對照：把毒素放錯病</h2></div>
+<p>出題慣用手法是把 A 病的毒素放進 B 病的選項。下面是曾經出過的例子。</p>
+<div class="table-wrap"><table><thead><tr><th>年份</th><th>題目問什麼</th><th>答案</th><th>陷阱</th><th>回到題目</th></tr></thead><tbody><tr><td>114 年</td><td>問「不是 B. bronchiseptica 的致病因子」</td><td>EFT（表皮剝落毒素）</td><td>EFT 是 S. hyicus 的毒素，放在 Bb 選項裡混淆</td><td><a href="豬病學統整.html#section-s5">國考題 #114-2#15</a></td></tr><tr><td>105 年</td><td>問滲出性表皮炎的毒素</td><td>ExhA／ExhB</td><td>ShetC／D、PmtA／B、Stx2e／Stx2d 都不是</td><td><a href="豬病學統整.html#section-s8">國考題 #105-1#6</a></td></tr><tr><td>103 年</td><td>Apx 作用機制接近哪個毒素</td><td>E. coli HlyA</td><td>LT、exotoxin A、破傷風毒素作用方式不同</td><td><a href="豬病學統整.html#section-s5">國考題 #103-2#3</a></td></tr><tr><td>105 年</td><td>ApxIII 的特性</td><td>不溶血、細胞毒性強</td><td>「ApxIII 具有較強溶血性」是錯的</td><td><a href="豬病學統整.html#section-s5">國考題 #105-1#5</a></td></tr><tr><td>106 年（考古）</td><td>水腫病的致病機制</td><td>Stx2e 傷血管內皮</td><td>「造成 cAMP 上升的毒素」是 LT，不是水腫病</td><td><a href="豬病學統整.html#section-s6">國考題 #106-1#2</a></td></tr><tr><td>115 年</td><td>萎縮性鼻炎最主要的致病毒素</td><td>P. multocida 的 PMT</td><td>Bordetella 的 DNT 也傷骨，但只造成輕微可逆的 NPAR</td><td><a href="豬病學統整.html#section-s5">國考題 #115-2#14</a></td></tr></tbody></table></div>
+</div>
+<div class="section" id="section-fim"><div class="section-head"><div class="section-num">4</div><h2>大腸桿菌線毛對照</h2></div>
+<p>線毛編號依「黏在哪、引起什麼病」分組記：腸道是 F 系列，尿道是 type 1 與 P。F4＝K88、F5＝K99、F6＝987P（舊名稱對照，補充）。</p>
+<div class="table-wrap"><table><thead><tr><th>疾病</th><th>線毛</th><th>黏在哪</th><th>標記</th><th>回到筆記</th></tr></thead><tbody><tr><td>新生仔豬下痢（ETEC）</td><td><strong>F4（K88）、F5（K99）、F6（987P）、F41</strong></td><td>小腸</td><td><span class="tag tag-exam">必考</span></td><td><a href="../../大四上/豬病學/week06_細菌性疾病I.html#section-ec-neo">第6週・新生仔豬下痢</a></td></tr><tr><td>離乳後下痢（PWD）</td><td><strong>F4（K88）或 F18</strong></td><td>小腸</td><td><span class="tag tag-exam">必考</span></td><td><a href="../../大四上/豬病學/week06_細菌性疾病I.html#section-ec-pwd">第6週・離乳後下痢與水腫病</a></td></tr><tr><td>水腫病（STEC／EDEC）</td><td><strong>F18</strong>（＋Stx2e）</td><td>空腸、迴腸</td><td><span class="tag tag-exam">必考</span></td><td><a href="../../大四上/豬病學/week06_細菌性疾病I.html#section-ec-pwd">第6週・離乳後下痢與水腫病</a></td></tr><tr><td>尿道感染（UPEC）</td><td><strong>type 1、P</strong></td><td>type 1 黏膀胱、P 黏腎臟（腎盂腎炎）<span class="tag">補充</span></td><td><span class="tag tag-exam">必考</span><span class="tag tag-exam">國考陷阱</span></td><td><a href="../../大四上/豬病學/week06_細菌性疾病I.html#section-ec-other">第6週・乳房炎與尿道感染</a></td></tr></tbody></table></div>
+<p><strong>國考與期中考古出過：</strong></p>
+<div class="table-wrap"><table><thead><tr><th>年份</th><th>題目問什麼</th><th>答案</th><th>陷阱</th><th>回到筆記</th></tr></thead><tbody><tr><td>106 學年期中 Q28</td><td>豬尿道感染的 E. coli，最常有 type 1 再加哪一種？</td><td>P 線毛</td><td>987P、F41 是新生仔豬下痢的；curli 不是本章重點</td><td><a href="../../大四上/豬病學/week06_細菌性疾病I.html#section-ec-other">第6週・乳房炎與尿道感染</a></td></tr><tr><td>111 學年期中</td><td>造成腎盂腎炎的線毛</td><td>P 線毛</td><td>P＝Pyelonephritis</td><td><a href="../../大四上/豬病學/week06_細菌性疾病I.html#section-ec-other">第6週・乳房炎與尿道感染</a></td></tr><tr><td>104 年國考</td><td>UTI 的 E. coli 除了 P 線毛，最常帶哪種？</td><td>type 1 線毛</td><td></td><td><a href="../../大四上/豬病學/week06_細菌性疾病I.html#section-ec-other">第6週・乳房炎與尿道感染</a></td></tr></tbody></table></div>
+<p><strong>記法（補充）：</strong>「新生仔豬四大」F4、F5、F6、F41；F18 只和離乳後有關；F4 兩邊都有；「P 腎、1 膀」。</p></div>
+<div class="section" id="section-vir"><div class="section-head"><div class="section-num">5</div><h2>豬丹毒、沙門氏菌、滲出性表皮炎、布氏桿菌的毒力因子</h2></div>
+<p>只有滲出性表皮炎有真正的毒素；其他三個病靠侵入、躲避、細胞內存活，沒有典型外毒素。</p>
+<div class="table-wrap"><table><thead><tr><th>疾病</th><th>毒力因子</th><th>作用</th><th>標記</th><th>回到筆記</th></tr></thead><tbody><tr><td>豬丹毒</td><td>neuraminidase、莢膜、SpaA（RspA/B 生物膜）</td><td><strong>沒有外毒素</strong>：穿透、抗吞噬、黏附</td><td><span class="tag tag-exam">必考</span><span class="tag tag-exam">國考陷阱</span></td><td><a href="../../大四上/豬病學/week07_細菌性疾病II.html#section-se-clin">第7週・豬丹毒致病</a></td></tr><tr><td>沙門氏菌</td><td><strong>SPI-1／SPI-2（第三型分泌系統）</strong>、spv 質體</td><td>SPI-1 侵入（膜起皺）；SPI-2 細胞內存活；spv 全身敗血症</td><td><span class="tag tag-exam">必考</span><span class="tag tag-exam">國考陷阱</span></td><td><a href="../../大四上/豬病學/week07_細菌性疾病II.html#section-sal-clin">第7週・沙門氏菌致病</a></td></tr><tr><td>滲出性表皮炎</td><td><strong>ExhA、ExhB</strong>（ExhC、D；日本 ShetA／B）</td><td>表皮剝落毒素，使表皮細胞分離</td><td><span class="tag tag-exam">必考</span><span class="tag tag-exam">國考陷阱</span></td><td><a href="../../大四上/豬病學/week07_細菌性疾病II.html#section-ee">第7週・滲出性表皮炎</a></td></tr><tr><td>布氏桿菌</td><td>urease、低內毒性 LPS、<strong>VirB（第四型分泌系統）</strong>、erythritol</td><td>緩衝胃酸、逃避免疫、<strong>酸性</strong>液泡內複製、偏好<strong>動物</strong>生殖組織</td><td><span class="tag tag-exam">必考</span><span class="tag tag-exam">國考陷阱</span></td><td><a href="../../大四上/豬病學/week07_細菌性疾病II.html#section-br">第7週・布氏桿菌症</a></td></tr></tbody></table></div>
+<p><strong>國考與期中考古出過：</strong></p>
+<div class="table-wrap"><table><thead><tr><th>出處</th><th>題目問什麼</th><th>答案</th><th>陷阱</th><th>回到筆記</th></tr></thead><tbody><tr><td>102、106 年國考</td><td>豬丹毒的敘述</td><td>沒有外毒素</td><td>「病原會分泌毒素」「可分泌腸毒素」是錯的</td><td><a href="豬病學統整.html#section-s6">國考題</a></td></tr><tr><td>103 年國考、期中考古合卷</td><td>注入作用蛋白、誘導細胞膜起皺而進入細胞</td><td>Type III 分泌系統（沙門氏菌 SPI-1）</td><td></td><td><a href="../../大四上/豬病學/week07_細菌性疾病II.html#section-sal-clin">第7週</a></td></tr><tr><td>105 年國考</td><td>滲出性表皮炎的毒素</td><td>ExhA 與 ExhB</td><td>ShetC／D、PmtA／B、Stx2e／Stx2d 都不是</td><td><a href="豬病學統整.html#section-s8">國考題 #105-1#6</a></td></tr><tr><td>期中考古 106 學年</td><td>布氏桿菌 VirB 的誘導環境</td><td>酸性（液泡）</td><td>「鹼性」是錯的</td><td><a href="../../大四上/豬病學/week07_細菌性疾病II.html#section-br">第7週・布氏桿菌症</a></td></tr><tr><td>期中考古 111 學年</td><td>erythritol 在哪些組織</td><td>動物的胎盤、乳腺、副睪</td><td>「人類」的是錯的</td><td><a href="../../大四上/豬病學/week07_細菌性疾病II.html#section-br">第7週・布氏桿菌症</a></td></tr></tbody></table></div>
+<p><strong>記法（補充）：</strong>看到「毒素」先停一下；沙門氏菌「1 進、2 活」；布氏桿菌「進、躲、活、愛生殖」；酸鹼、人／動物這類一字之差要記原文。</p></div>
+<div class="section" id="section-sal"><div class="section-head"><div class="section-num">6</div><h2>沙門氏菌：敗血型 vs 腸炎型</h2></div>
+<p>題目常給一串臨床與病變線索，要你判斷是敗血型還是腸炎型，再對應血清型。先抓關鍵線索：只有下痢、鈕扣狀潰瘍而沒有敗血徵象偏腸炎型；發紺、脾腫大、肝壞死點偏敗血型；<strong>兩者並存時仍選 Choleraesuis</strong>。</p>
+<div class="table-wrap"><table><thead><tr><th>項目</th><th>敗血型（S. Choleraesuis）</th><th>腸炎型（S. Typhimurium）</th><th>標記</th><th>回到筆記</th></tr></thead><tbody><tr><td>好發年齡</td><td>約 12–14 週齡</td><td>離乳後，約 6 週齡起反覆下痢</td><td></td><td><a href="../../大四上/豬病學/week07_細菌性疾病II.html#section-sal-clin">第7週・沙門氏菌</a></td></tr><tr><td>外觀</td><td>耳翼、四肢末端、腹部發紺（紅耳朵）、皮膚出血斑</td><td>黃色水樣下痢、脫水、消瘦</td><td></td><td><a href="../../大四上/豬病學/week07_細菌性疾病II.html#section-sal-clin">第7週・沙門氏菌</a></td></tr><tr><td>內臟與腸道</td><td>脾腫大、肝粟粒狀壞死（副傷寒小節）、肺堅實水腫出血</td><td>壞死性結腸盲腸炎、結腸<strong>鈕扣狀潰瘍</strong>（敗血型的耐過豬也可有結腸炎，講義 p.70）</td><td><span class="tag tag-exam">必考</span></td><td><a href="../../大四上/豬病學/week07_細菌性疾病II.html#section-sal-clin">第7週・沙門氏菌</a></td></tr><tr><td>死因</td><td>敗血症、肺炎</td><td>長期下痢</td><td></td><td><a href="../../大四上/豬病學/week07_細菌性疾病II.html#section-sal-clin">第7週・沙門氏菌</a></td></tr></tbody></table></div>
+<p><strong>題庫裡考過的題目：</strong></p>
+<div class="table-wrap"><table><thead><tr><th>出處</th><th>題目線索</th><th>答案</th><th>提醒</th><th>回到筆記</th></tr></thead><tbody><tr><td>110 年國考</td><td>全身紫斑、脾腫肝腫、肝壞死點、MacConkey 無色</td><td>S. Choleraesuis（敗血型）</td><td>沒有下痢與腸道病變就不是腸炎型</td><td><a href="../../大四上/豬病學/week07_細菌性疾病II.html#section-sal-clin">第7週・沙門氏菌</a></td></tr><tr><td>102 年第二次</td><td>主要呈現敗血症、MacConkey 無色</td><td>Choleraesuis</td><td></td><td><a href="../../大四上/豬病學/week07_細菌性疾病II.html#section-sal-clin">第7週・沙門氏菌</a></td></tr><tr><td>112 年第二次</td><td>耳翼及四肢末端發紺的敗血症</td><td>Choleraesuis</td><td></td><td><a href="../../大四上/豬病學/week07_細菌性疾病II.html#section-sal-clin">第7週・沙門氏菌</a></td></tr><tr><td>99 年第二次</td><td>最易引起豬肺炎的血清型</td><td>Choleraesuis</td><td>Typhimurium 以腸炎為主</td><td><a href="../../大四上/豬病學/week07_細菌性疾病II.html#section-sal-clin">第7週・沙門氏菌</a></td></tr><tr><td>98 年第二次</td><td>亞急性及慢性沙門氏菌症的潰瘍部位</td><td>結腸</td><td></td><td><a href="../../大四上/豬病學/week07_細菌性疾病II.html#section-sal-clin">第7週・沙門氏菌</a></td></tr><tr><td>111 年第二次</td><td>保育期頑固性下痢、壞死性腸炎與潰瘍</td><td>沙門氏菌感染症</td><td></td><td><a href="../../大四上/豬病學/week07_細菌性疾病II.html#section-sal-clin">第7週・沙門氏菌</a></td></tr><tr><td>115 年第二次</td><td>保育舍仔豬下痢、盲腸結腸鈕扣樣潰瘍</td><td>沙門氏菌症（官方答案缺，依知識判斷）</td><td></td><td><a href="../../大四上/豬病學/week07_細菌性疾病II.html#section-sal-clin">第7週・沙門氏菌</a></td></tr><tr><td>109 年第一次</td><td>發紺、脾腫、結腸鈕扣狀潰瘍、肝壞死點同時出現</td><td>S. Choleraesuis</td><td>選項是四種不同菌屬，只要認出沙門氏菌；敗血型耐過豬也可有結腸鈕扣狀潰瘍（講義 p.70）</td><td><a href="../../大四上/豬病學/week07_細菌性疾病II.html#section-sal-clin">第7週・沙門氏菌</a></td></tr></tbody></table></div>
+<p><strong>解題步驟（補充）：</strong>① 抓線索；② 兩型都有時看選項有沒有血清型；③ 只問「沙門氏菌症」整體時，看病變類型，不要自己加血清型；④ 選項若是不同菌屬，只要認出沙門氏菌即可。</p></div>
+<div class="section" id="section-fever"><div class="section-head"><div class="section-num">7</div><h2>發燒＋出血的豬：豬瘟的鑑別對照</h2></div>
+<p>這些病的症狀與肉眼病變高度重疊，重點不是靠外觀猜，而是先懷疑、用剖檢縮小範圍、最後一定靠實驗室確診。鑑別清單出自第 2 週講義（豬瘟的鑑別診斷），各病線索來自第 2、3、7 週講義。</p>
+<p><strong>判斷流程（補充，整理者歸納）：</strong></p>
+<ol>
+<li><strong>先問：會不會是法定傳染病？</strong>「發燒＋出血＋死亡率高」先想豬瘟、非洲豬瘟。台灣豬瘟 2023 起停打疫苗、ASF 尚未入侵，懷疑就要<strong>隔離、通報、送驗</strong>，不要先治療或移動豬隻。<span class="tag">補充</span></li>
+<li><strong>用流行病學縮小範圍</strong>：年齡、發病率與死亡率、廚餘、野豬接觸、引種、疫苗紀錄。<span class="tag">補充</span></li>
+<li><strong>用剖檢病變找特徵</strong>：見下表。</li>
+<li><strong>實驗室確診</strong>：抗原（病毒分離、RT-PCR）、抗體（ELISA、中和試驗）、細菌培養。</li>
+</ol>
+<div class="alert alert-warn" style="font-size:.95em">
+<div class="alert-label">口訣（補充，整理者自編）</div>
+<ul style="margin:.3em 0 0;padding-left:1.2em">
+<li><strong>CSF＝Clot（血栓）→「塞住」</strong>：內皮壞死＋血小板減少 → 小血管形成血栓，脾臟邊緣的末端血管被塞住 → <strong>脾臟邊緣梗塞</strong>（脾臟本身不太腫）。</li>
+<li><strong>ASF →「塞滿」（腫大）</strong>：巨噬細胞大量死亡、紅髓被血液塞滿（充血＋出血）→ <strong>脾臟腫大、暗黑、質脆</strong>。</li>
+<li><strong>點狀出血＝敗血症的共同語言，脾臟才是方言</strong>：腎、膀胱的點狀出血 CSF、ASF、豬丹毒、敗血型沙門氏菌症都有，不能拿來區分；要分辨看<strong>脾臟</strong>和<strong>淋巴結</strong>（CSF 淋巴結<strong>周邊</strong>出血）。</li>
+<li>一句話：「<strong>ASF 塞滿、CSF 塞住；點狀出血大家都有</strong>」。</li>
+</ul>
+</div>
+<div class="table-wrap"><table><thead><tr><th>疾病</th><th>最能區分的線索</th><th>怎麼確診</th><th>標記</th><th>回到筆記</th></tr></thead><tbody><tr><td><strong>豬瘟（CSF）</strong><br><span style="font-size:.85em;color:var(--fg-muted)">口訣：Clot・塞住</span></td><td>脾臟<strong>邊緣梗塞</strong>、淋巴結<strong>周邊出血</strong>、腎／膀胱點狀出血、扁桃腺壞死、迴盲瓣鈕扣狀潰瘍（慢性）；白血球減少</td><td>RT-PCR／qRT-PCR（扁桃腺、脾、淋巴結、腎、迴盲瓣）；FAVNT 為抗體金標準</td><td><span class="tag tag-exam">必考</span><span class="tag tag-exam">國考陷阱</span></td><td><a href="../../大四上/豬病學/week02_豬病毒性疾病I.html#section-csf-b">第2週・豬瘟</a></td></tr><tr><td><strong>非洲豬瘟（ASF）</strong><br><span style="font-size:.85em;color:var(--fg-muted)">口訣：塞滿・腫大</span></td><td>脾臟<strong>腫大、質脆、暗黑</strong>；淋巴結出血；腎皮質點狀出血、腎周水腫；軟蜱、野豬、廚餘風險</td><td>PCR；<strong>血球吸附（HAD）玫瑰花環</strong>只有 ASFV 會出現</td><td><span class="tag tag-exam">必考</span><span class="tag tag-exam">國考陷阱</span></td><td><a href="../../大四上/豬病學/week02_豬病毒性疾病I.html#section-asf-c">第2週・非洲豬瘟</a></td></tr><tr><td>PRRS</td><td>肺斑駁不塌陷（間質性肺炎）；母豬晚期流產、仔豬呼吸道病、藍耳；通常不是全身大出血</td><td>RT-PCR、ELISA（以 14 天為界解讀）</td><td></td><td><a href="../../大四上/豬病學/week03_豬病毒性疾病II.html#section-prrs-path">第3週・PRRS</a></td></tr><tr><td>PCVAD</td><td>消耗、生長遲滯、淋巴耗竭；PDNS 後肢會陰紅紫色斑、腎腫大蒼白伴點狀出血</td><td>病灶內驗到中至大量 PCV2（單純 PCR 陽性不夠）</td><td></td><td><a href="../../大四上/豬病學/week03_豬病毒性疾病II.html#section-pcv-path">第3週・PCVAD</a></td></tr><tr><td>假性狂犬病（PR）</td><td>仔豬神經症狀；肝脾多發白色壞死點；核內包涵體</td><td>PCR、gE ELISA（區分感染與疫苗）</td><td></td><td><a href="豬病學統整.html#section-s2">國考題・假性狂犬病</a>（筆記頁尚未完成）</td></tr><tr><td>豬丹毒</td><td>急性菱形突起疹（指壓褪色）、腎皮質點狀出血；慢性疣狀心內膜炎、關節炎；對 penicillin 有反應</td><td>培養（革蘭氏陽性細長桿菌）</td><td></td><td><a href="../../大四上/豬病學/week07_細菌性疾病II.html#section-se-clin">第7週・豬丹毒</a></td></tr><tr><td>沙門氏菌症</td><td>耳翼四肢發紺（紅耳朵）、脾腫大、肝副傷寒小節；結腸鈕扣狀潰瘍</td><td>培養（MacConkey 無色菌落）、PCR</td><td></td><td><a href="../../大四上/豬病學/week07_細菌性疾病II.html#section-sal-clin">第7週・沙門氏菌</a></td></tr><tr><td>旋毛蟲症</td><td>講義列為鑑別；豬多無明顯症狀<span class="tag">補充</span></td><td>肌肉檢查幼蟲<span class="tag">補充</span></td><td></td><td><a href="../../大四上/豬病學/week02_豬病毒性疾病I.html#section-csf-b">第2週・豬瘟鑑別</a></td></tr></tbody></table></div>
+<p><strong>講義特別提醒（ASF vs CSF）：</strong>中等毒力 ASFV 的症狀已不像典型的大量血樣腹瀉與脾腫大；攻毒試驗顯示兩者臨床症狀非常相似；ASFV 與 CSFV 從未在同一頭豬分離到。所以兩者<strong>不能只靠症狀判斷</strong>。</p>
+<p><strong>國考出過：</strong></p>
+<div class="table-wrap"><table><thead><tr><th>出處</th><th>題目問什麼</th><th>答案</th><th>陷阱</th><th>回到題目</th></tr></thead><tbody><tr><td>113 年</td><td>脾臟周邊梗塞</td><td>豬瘟</td><td>ASF 是脾腫大質脆暗黑，不是梗塞</td><td><a href="豬病學統整.html#section-s8">國考題</a></td></tr><tr><td>99 年</td><td>腎皮質點狀出血</td><td>豬瘟與豬丹毒</td><td></td><td><a href="豬病學統整.html#section-s8">國考題</a></td></tr><tr><td>109 年</td><td>哪個「不是」豬瘟病變</td><td>肝臟多發局部壞死</td><td>肝壞死點是沙門氏菌、李斯特菌類</td><td><a href="豬病學統整.html#section-s0">國考題</a></td></tr><tr><td>103 年</td><td>哪個「不是」急性豬瘟的特徵病變</td><td>鈕扣狀潰瘍</td><td>鈕扣狀潰瘍屬慢性豬瘟（題目還寫成十二指腸）</td><td><a href="豬病學統整.html#section-s0">國考題</a></td></tr><tr><td>108、111 年</td><td>血球吸附試驗</td><td>非洲豬瘟</td><td>只有 ASFV 能在白血球培養造成血球吸附</td><td><a href="豬病學統整.html#section-s9">國考題</a></td></tr><tr><td>108 年</td><td>急性感染最可能出現血便</td><td>非洲豬瘟</td><td>豬瘟的下痢多為黃灰色水樣</td><td><a href="豬病學統整.html#section-s9">國考題</a></td></tr></tbody></table></div>
+<p><strong>要背到什麼程度：</strong>一定要會 CSF 脾邊緣梗塞 vs ASF 脾腫大質脆暗黑、CSF 淋巴結周邊出血與迴盲瓣鈕扣狀潰瘍、ASF 的 HAD 玫瑰花環、兩者要靠實驗室確診；其他鑑別病懂各自的招牌線索即可。</p></div>
+<div class="section" id="section-diva"><div class="section-head"><div class="section-num">8</div><h2>疫苗與 DIVA 對照</h2></div>
+<p><strong>DIVA ＝ Differentiating Infected from Vaccinated Animals</strong>：區分野外感染與疫苗接種的動物。原理是「<strong>疫苗故意少一個標記抗原，檢驗只驗那個抗原的抗體</strong>」：有抗體＝真的感染過；沒有＝只打過疫苗（講義：DIVA 疫苗＋DIVA 檢驗要搭配）。一般減毒活疫苗做不到 DIVA，所以台灣豬瘟要靠階段性停打疫苗證明根除。</p>
+<div class="alert alert-warn" style="font-size:.95em"><div class="alert-label">口訣（補充，整理者自編）</div>
+<ul style="margin:.3em 0 0;padding-left:1.2em"><li>「<strong>少一塊、驗那塊</strong>」：疫苗少哪個抗原，就驗哪個抗原的抗體。</li><li>「<strong>瘟 E（rns）、蹄 N（SP）、狂 g（E）</strong>」：豬瘟驗 Erns、口蹄疫驗 NSP、假性狂犬病驗 gE；PRRS 沒有。</li></ul></div>
+<div class="table-wrap"><table><thead><tr><th>疾病</th><th>疫苗故意少了什麼</th><th>驗什麼抗體</th><th>限制</th><th>標記</th><th>回到筆記</th></tr></thead><tbody><tr><td>豬瘟（CSF）</td><td>E2 次單位疫苗；CP7_E2alf 嵌合疫苗（BVDV 骨架＋CSFV E2）：都沒有 CSFV 的 <strong>Erns</strong></td><td><strong>Erns ELISA</strong></td><td>敏感度與特異度差、與 BVDV／BDV 交叉反應，只適合族群篩檢</td><td><span class="tag tag-exam">必考</span></td><td><a href="../../大四上/豬病學/week02_豬病毒性疾病I.html#section-csf-c">第2週・豬瘟防治</a></td></tr><tr><td>口蹄疫（FMD）</td><td>不活化疫苗只有結構蛋白（SP），沒有<strong>非結構蛋白（NSP）</strong></td><td><strong>NSP（如 3A3B）抗體</strong></td><td>—</td><td><span class="tag tag-exam">必考</span><span class="tag tag-exam">國考陷阱</span></td><td><a href="../../大四上/豬病學/week04_小RNA病毒科疾病.html#section-fmd-dx">第4週・口蹄疫診斷</a></td></tr><tr><td>假性狂犬病（PR）</td><td><strong>gE 基因缺失</strong>疫苗</td><td><strong>gE ELISA</strong></td><td>—</td><td><span class="tag tag-exam">必考</span></td><td><a href="豬病學統整.html#section-s2">國考題・假性狂犬病</a></td></tr><tr><td>PRRS</td><td>目前<strong>沒有可靠的 DIVA</strong></td><td>—</td><td>111 年國考把 PRRS 混進選項</td><td><span class="tag tag-exam">國考陷阱</span></td><td><a href="豬病學統整.html#section-s0">國考題</a></td></tr></tbody></table></div>
+<p><strong>國考與期中考出過：</strong></p>
+<div class="table-wrap"><table><thead><tr><th>出處</th><th>題目問什麼</th><th>答案</th><th>陷阱</th><th>回到題目／筆記</th></tr></thead><tbody><tr><td>111 年</td><td>哪些病已有 DIVA 技術</td><td>豬瘟、口蹄疫、假性狂犬病</td><td>PRRS 沒有</td><td><a href="豬病學統整.html#section-s0">國考題</a></td></tr><tr><td>109 年</td><td>口蹄疫疫苗地區要驗什麼判定野外感染</td><td>非結構性蛋白抗體</td><td></td><td><a href="../../大四上/豬病學/week04_小RNA病毒科疾病.html#section-fmd-dx">第4週・口蹄疫診斷</a></td></tr><tr><td>115 年</td><td>全場疫苗＋DIVA 篩選＋淘汰達到清淨</td><td>假性狂犬病（官方答案缺，依知識判斷）</td><td></td><td><a href="豬病學統整.html#section-s9">國考題</a></td></tr><tr><td>111 年</td><td>已廣泛使用基因缺損疫苗的病</td><td>假性狂犬病</td><td></td><td><a href="豬病學統整.html#section-s9">國考題</a></td></tr><tr><td>2019 期中考</td><td>E2 次單位疫苗＋Erns 抗體</td><td>可區分野外感染（正確）；減毒疫苗不易區分（正確）</td><td></td><td><a href="../../大四上/豬病學/week02_豬病毒性疾病I.html#section-csf-c">第2週・豬瘟防治</a></td></tr></tbody></table></div><footer class="note-footer">本頁為個人課堂筆記整理，僅供學習與複習使用，不作為正式診斷依據。統整為依講義與歷屆國考整理，「必考」「陷阱」標記是依考古題方向判斷，實際以老師上課為準。</footer></div>
+</main></div>
+<script>
+function showSection(id) {
+  const el = document.getElementById('section-' + id);
+  if (el) el.scrollIntoView({ block: 'start' });
+  setActive(id);
+}
+function setActive(id) {
+  document.querySelectorAll('nav.toc a').forEach(a => a.classList.remove('active'));
+  const a = document.getElementById('nav-' + id);
+  if (a) a.classList.add('active');
+}
+(function () {
+  const secs = [...document.querySelectorAll('.section[id^="section-"]')];
+  const io = new IntersectionObserver(es => {
+    es.forEach(e => { if (e.isIntersecting) setActive(e.target.id.replace('section-', '')); });
+  }, { rootMargin: '-15% 0px -75% 0px' });
+  secs.forEach(sec => io.observe(sec));
+})();
+function toggleTheme() {
+  const html = document.documentElement, btn = document.getElementById('themeBtn');
+  const isDark = html.getAttribute('data-theme') === 'dark';
+  html.setAttribute('data-theme', isDark ? 'light' : 'dark');
+  btn.textContent = isDark ? '🌙' : '☀️';
+  localStorage.setItem('theme', isDark ? 'light' : 'dark');
+}
+(function(){ const t=localStorage.getItem('theme'); if(t){ document.documentElement.setAttribute('data-theme',t); document.getElementById('themeBtn').textContent = t==='dark'?'☀️':'🌙'; } })();
+
+document.addEventListener('DOMContentLoaded', function () {
+  if (location.hash && location.hash.indexOf('#section-') === 0) {
+    const id = location.hash.replace('#section-', '');
+    if (document.getElementById('section-' + id)) showSection(id);
+  }
+});
+
+</script>
+<script src="../../assets/nav-data.js"></script>
+<script src="../../assets/nav.js"></script>
+<script>
+initSiteNav('siteNav', 'navPanel');
+</script>
+
+</body>
+</html>
