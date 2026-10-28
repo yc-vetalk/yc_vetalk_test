@@ -60,6 +60,7 @@ body.pdf-dragging{user-select:none;cursor:col-resize}
       <div class="meta-item"><div class="meta-label">資料來源</div><div class="meta-value">《反芻動物疾病學》課程講義〈Clinical Examination in Ruminants〉p.1–33（Jui-Chun Hsieh）</div></div>
       <div class="meta-item"><div class="meta-label">最後更新</div><div class="meta-value">2026-10-22</div></div>
       <div class="meta-item"><div class="meta-label">講義 PDF</div><div class="meta-value"><a class="pdf-open-link" href="pdf/臨床檢查與眼科疾病.pdf#page=1">在右側開啟講義</a></div></div>
+      <div class="meta-item"><div class="meta-label">自我測驗</div><div class="meta-value"><a href="自我測驗/quiz.html?c=week02_%E8%87%A8%E5%BA%8A%E6%AA%A2%E6%9F%A5">做題 →</a></div></div>
       <div class="meta-item"><div class="meta-label">整理狀態</div><div class="meta-value">完整筆記</div></div>
     </div>
   </div>
@@ -82,6 +83,8 @@ body.pdf-dragging{user-select:none;cursor:col-resize}
     <a onclick="showSection('compare')" id="nav-compare"><span class="nav-icon">🧩</span> 數字與比較整理</a>
     <a onclick="showSection('exam')" id="nav-exam"><span class="nav-icon">📝</span> 考試方向（推測）</a>
     <a onclick="showSection('quiz')" id="nav-quiz"><span class="nav-icon">✏️</span> 練習題</a>
+    <div class="section-label" style="margin-top:8px;">練習</div>
+    <a href="自我測驗/quiz.html?c=week02_%E8%87%A8%E5%BA%8A%E6%AA%A2%E6%9F%A5" id="nav-quiz-link"><span class="nav-icon">📝</span> 自我測驗</a>
   </nav>
 
   <main class="pagebody" id="mainContent">
@@ -347,6 +350,22 @@ body.pdf-dragging{user-select:none;cursor:col-resize}
       </div>
       <div class="figure"><img src="img/week02_臨床檢查/ce_p028.jpg" alt="叩診併聽診；右側三張圖標示 ping 區：左側瘤胃與 LDA；右側 RDA 或扭轉；右側盲腸與螺旋結腸。" loading="lazy"><div class="figure-caption">叩診併聽診；右側三張圖標示 ping 區：左側瘤胃與 LDA；右側 RDA 或扭轉；右側盲腸與螺旋結腸。</div><div class="figure-source">來源：課程講義 <a class="pdf-link" href="pdf/臨床檢查與眼科疾病.pdf#page=28">p.28</a></div></div>
       <div class="alert alert-warn"><div class="alert-label">注意</div><p>左側的 ping 不一定是 LDA：瘤胃本身有氣體也會 ping。圖上 LDA 的區域在瘤胃 ping 的<strong>下方偏前</strong>、肋骨區。右側的 ping 也要區分是皺胃（較前）還是腸道（盲腸、螺旋結腸，在腰旁窩）。確診通常還要配合衝擊觸診、直腸觸診或穿刺（補充）。</p></div>
+      <div class="ping-map" style="margin:1.2rem 0">
+        <div class="alert alert-info"><div class="alert-label">位置圖（依講義 p.28 整理，示意，非解剖比例）</div><p>聽到 ping 的位置，對應到可能的臟器。顏色代表來源；虛線橢圓是腰旁窩，黑點是髖結節（tuber coxae），細線是肋骨。</p></div>
+        <div class="grid-2">
+          <div class="figure"><svg viewBox="0 0 372 232" role="img" aria-label="牛左側示意圖：瘤胃氣帽 ping 區在腰旁窩與背側；LDA ping 區在肋骨區、瘤胃 ping 區的下方偏前" style="width:100%;height:auto"><g stroke="var(--fg-dim)" stroke-width="1.6" fill="var(--bg-soft)" stroke-linejoin="round"><path d="M95,70 Q95,55 120,55 L300,55 Q335,55 335,85 L335,135 Q335,155 305,155 L125,155 Q95,155 95,125 Z"/><path d="M95,75 L58,96 Q36,106 36,121 L46,136 Q62,141 72,129 L95,115"/><rect x="112" y="155" width="13" height="52" rx="4"/><rect x="138" y="155" width="13" height="52" rx="4"/><rect x="288" y="155" width="13" height="52" rx="4"/><rect x="314" y="155" width="13" height="52" rx="4"/><path d="M335,68 Q352,90 346,140" fill="none"/></g><g stroke="var(--fg-dim)" stroke-width="1" fill="none" opacity=".55"><path d="M118,58 Q126,105 128,150"/><path d="M138,58 Q146,105 146,150"/><path d="M158,58 Q166,105 164,150"/><path d="M178,58 Q186,105 182,150"/><path d="M198,58 Q206,105 200,150"/><path d="M218,58 Q226,105 218,150"/></g><ellipse cx="262" cy="88" rx="22" ry="27" fill="none" stroke="var(--fg-dim)" stroke-width="1.2" stroke-dasharray="4 3"/><circle cx="304" cy="68" r="4" fill="var(--fg-dim)"/><ellipse cx="255" cy="90" rx="52" ry="34" fill="#e08a2e" fill-opacity=".30" stroke="#e08a2e" stroke-width="2"/><ellipse cx="200" cy="115" rx="27" ry="22" fill="#c8452d" fill-opacity=".30" stroke="#c8452d" stroke-width="2"/><line x1="285" y1="64" x2="300" y2="34" stroke="#e08a2e" stroke-width="1.4"/><text x="300" y="28" text-anchor="middle" font-size="12" font-weight="700" fill="#e08a2e">瘤胃（氣帽）ping</text><line x1="200" y1="136" x2="200" y2="176" stroke="#c8452d" stroke-width="1.4"/><text x="200" y="192" text-anchor="middle" font-size="12" font-weight="700" fill="#c8452d">LDA ping（皺胃左方移位）</text><text x="30" y="60" text-anchor="start" font-size="10.5" fill="var(--fg-dim)">前（頭）</text><text x="350" y="170" text-anchor="end" font-size="10.5" fill="var(--fg-dim)">後</text><text x="262" y="128" text-anchor="middle" font-size="10.5" fill="var(--fg-dim)">腰旁窩</text><text x="150" y="52" text-anchor="middle" font-size="10.5" fill="var(--fg-dim)">肋骨區</text></svg><div class="figure-caption">牛左側：橘色＝瘤胃氣帽 ping（背側、腰旁窩一帶）；紅色＝LDA ping（肋骨區，在瘤胃 ping 的下方偏前）。</div></div>
+          <div class="figure"><svg viewBox="0 0 372 232" role="img" aria-label="牛右側示意圖：RDA 或扭轉的 ping 區在較前方的肋弓區；盲腸與螺旋結腸的 ping 區在腰旁窩" style="width:100%;height:auto"><g transform="translate(372,0) scale(-1,1)"><g stroke="var(--fg-dim)" stroke-width="1.6" fill="var(--bg-soft)" stroke-linejoin="round"><path d="M95,70 Q95,55 120,55 L300,55 Q335,55 335,85 L335,135 Q335,155 305,155 L125,155 Q95,155 95,125 Z"/><path d="M95,75 L58,96 Q36,106 36,121 L46,136 Q62,141 72,129 L95,115"/><rect x="112" y="155" width="13" height="52" rx="4"/><rect x="138" y="155" width="13" height="52" rx="4"/><rect x="288" y="155" width="13" height="52" rx="4"/><rect x="314" y="155" width="13" height="52" rx="4"/><path d="M335,68 Q352,90 346,140" fill="none"/></g><g stroke="var(--fg-dim)" stroke-width="1" fill="none" opacity=".55"><path d="M118,58 Q126,105 128,150"/><path d="M138,58 Q146,105 146,150"/><path d="M158,58 Q166,105 164,150"/><path d="M178,58 Q186,105 182,150"/><path d="M198,58 Q206,105 200,150"/><path d="M218,58 Q226,105 218,150"/></g><ellipse cx="262" cy="88" rx="22" ry="27" fill="none" stroke="var(--fg-dim)" stroke-width="1.2" stroke-dasharray="4 3"/><circle cx="304" cy="68" r="4" fill="var(--fg-dim)"/><ellipse cx="262" cy="90" rx="28" ry="31" fill="#3d7fb5" fill-opacity=".30" stroke="#3d7fb5" stroke-width="2"/><ellipse cx="200" cy="100" rx="28" ry="26" fill="#7a5aa6" fill-opacity=".30" stroke="#7a5aa6" stroke-width="2"/></g><line x1="110" y1="62" x2="120" y2="34" stroke="#3d7fb5" stroke-width="1.4"/><text x="120" y="28" text-anchor="middle" font-size="12" font-weight="700" fill="#3d7fb5">盲腸／螺旋結腸 ping</text><line x1="172" y1="124" x2="172" y2="176" stroke="#7a5aa6" stroke-width="1.4"/><text x="172" y="192" text-anchor="middle" font-size="12" font-weight="700" fill="#7a5aa6">RDA 或扭轉 ping（較前方、肋弓區）</text><text x="342" y="60" text-anchor="end" font-size="10.5" fill="var(--fg-dim)">前（頭）</text><text x="22" y="170" text-anchor="start" font-size="10.5" fill="var(--fg-dim)">後</text><text x="110" y="128" text-anchor="middle" font-size="10.5" fill="var(--fg-dim)">腰旁窩</text><text x="222" y="52" text-anchor="middle" font-size="10.5" fill="var(--fg-dim)">肋骨區</text></svg><div class="figure-caption">牛右側：紫色＝RDA 或扭轉 ping（較前方、肋弓區）；藍色＝盲腸、螺旋結腸 ping（腰旁窩）。</div></div>
+        </div>
+        <div class="table-wrap"><table>
+          <thead><tr><th>在哪裡聽到 ping</th><th>最先想到</th><th>怎麼進一步確認（補充）</th></tr></thead>
+          <tbody>
+            <tr><td><strong>左側</strong>，背側、腰旁窩</td><td>瘤胃本身有氣體（例如氣體性鼓脹）</td><td>看左腰旁窩是否鼓脹、瘤胃蠕動；插胃管氣體是否噴出</td></tr>
+            <tr><td><strong>左側</strong>，肋骨區（瘤胃 ping 下方偏前）</td><td><strong>皺胃左方移位（LDA）</strong></td><td>衝擊觸診聽晃水聲、直腸觸診、穿刺；多見產後 4–6 週乳牛（共筆）</td></tr>
+            <tr><td><strong>右側</strong>，較前方、肋弓區</td><td><strong>皺胃右方移位（RDA）或扭轉</strong></td><td>右側衝擊觸診；扭轉常有全身症狀、肋骨呈「sprung rib」外觀（共筆）</td></tr>
+            <tr><td><strong>右側</strong>，腰旁窩</td><td><strong>盲腸</strong>、<strong>螺旋結腸</strong></td><td>直腸觸診、超音波；盲腸擴張與扭轉多在泌乳早期（共筆）</td></tr>
+          </tbody></table></div>
+        <p style="font-size:.9em;color:var(--fg-muted)">圖是依講義 p.28 三張圖的位置關係重畫的示意圖，不代表精確的肋骨編號與臟器邊界；確診不能只靠 ping。</p>
+      </div>
       <h3>右側衝擊觸診 Ballottement（<a class="pdf-link" href="pdf/臨床檢查與眼科疾病.pdf#page=29">p.29</a>）<span class="lv lv-must">必考</span></h3>
       <ul>
         <li>在<strong>右側</strong>腹部做衝擊觸診，聽到<strong>「晃水聲（sloshing）」</strong> → <strong>腹腔內有液體</strong>（intraabdominal fluid）。</li>
@@ -581,6 +600,11 @@ body.pdf-dragging{user-select:none;cursor:col-resize}
       <div class="quiz-item"><span class="quiz-type quiz-type-vignette">臨床情境題</span>
         <div class="quiz-q">Q15.【臨床情境】你在牧場做乾乳牛群巡視，評估幾頭即將分娩的牛：A 牛臀區呈 U 型，薦骨韌帶與尾根韌帶幾乎都看不到；B 牛臀區呈 V 型，腸骨翼與坐骨結都有角度，腰區短肋可見長度超過 3/4。請問：(1) 兩頭的 BCS？(2) 評估時牛的姿勢與觀察角度？(3) 這兩頭各自可能有什麼產後風險？</div>
         <details class="quiz-reveal"><summary></summary><p class="quiz-explain"><strong>(1)</strong> A 牛 ≥ 4.0；B 牛 ≤ 2.0（<a class="pdf-link" href="pdf/臨床檢查與眼科疾病.pdf#page=21">p.21</a>）。<br><strong>(2)</strong> 站立，從後方 45° 角（<a class="pdf-link" href="pdf/臨床檢查與眼科疾病.pdf#page=20">p.20</a>）。<br><strong>(3)</strong> A 牛過胖：產後採食下降更多、體脂動員多，酮症、脂肪肝與轉換期疾病風險高（補充）。B 牛過瘦：體脂儲備不足以應付產後負能量平衡，產乳與繁殖表現可能差（補充；消化生理講義第 54 頁提到乾乳期要讓牛調整體況、累積體脂肪以因應產後負能量平衡）。</p></details>
+      </div>
+      <div class="quiz-cta" style="margin:2.5rem 0 1rem;padding:1.4rem 1.6rem;text-align:center;border:1px solid var(--line-soft);border-radius:var(--radius);background:var(--bg-soft)">
+        <p style="margin:0 0 .8rem;font-weight:600;color:var(--accent-deep)">讀完了？用題目檢查一下這章</p>
+        <a href="自我測驗/quiz.html?c=week02_%E8%87%A8%E5%BA%8A%E6%AA%A2%E6%9F%A5" style="display:inline-block;padding:.6rem 1.6rem;border-radius:999px;background:var(--accent);color:var(--bg);font-weight:700;text-decoration:none">📝 做這章的自我測驗 →</a>
+        <p style="margin:.7rem 0 0;font-size:.85em;color:var(--fg-muted)">每題作答後立即顯示解析；答錯的會進錯題本。</p>
       </div>
       <footer class="note-footer">練習題依講義內容出題，答案與解析僅供自我複習參考。</footer>
     </div>

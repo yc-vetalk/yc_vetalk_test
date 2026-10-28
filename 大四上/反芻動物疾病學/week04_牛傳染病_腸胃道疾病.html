@@ -60,6 +60,7 @@ body.pdf-dragging{user-select:none;cursor:col-resize}
       <div class="meta-item"><div class="meta-label">資料來源</div><div class="meta-value">《反芻動物疾病學》課程講義〈Bovine Infectious Disease〉p.2–60（Chi-Fei Kao，2026.09.29；部分投影片由鄭益謙老師提供）</div></div>
       <div class="meta-item"><div class="meta-label">最後更新</div><div class="meta-value">2026-10-22</div></div>
       <div class="meta-item"><div class="meta-label">講義 PDF</div><div class="meta-value"><a class="pdf-open-link" href="pdf/牛傳染病.pdf#page=1">在右側開啟講義</a></div></div>
+      <div class="meta-item"><div class="meta-label">自我測驗</div><div class="meta-value"><a href="自我測驗/quiz.html?c=week04_%E7%89%9B%E5%82%B3%E6%9F%93%E7%97%85_%E8%85%B8%E8%83%83%E9%81%93%E7%96%BE%E7%97%85">做題 →</a></div></div>
       <div class="meta-item"><div class="meta-label">整理狀態</div><div class="meta-value">完整筆記</div></div>
     </div>
   </div>
@@ -82,6 +83,8 @@ body.pdf-dragging{user-select:none;cursor:col-resize}
     <a onclick="showSection('compare')" id="nav-compare"><span class="nav-icon">🧩</span> 鑑別比較</a>
     <a onclick="showSection('exam')" id="nav-exam"><span class="nav-icon">📝</span> 考試方向（推測）</a>
     <a onclick="showSection('quiz')" id="nav-quiz"><span class="nav-icon">✏️</span> 練習題</a>
+    <div class="section-label" style="margin-top:8px;">練習</div>
+    <a href="自我測驗/quiz.html?c=week04_%E7%89%9B%E5%82%B3%E6%9F%93%E7%97%85_%E8%85%B8%E8%83%83%E9%81%93%E7%96%BE%E7%97%85" id="nav-quiz-link"><span class="nav-icon">📝</span> 自我測驗</a>
   </nav>
 
   <main class="pagebody" id="mainContent">
@@ -407,6 +410,23 @@ body.pdf-dragging{user-select:none;cursor:col-resize}
         <li><strong>根除</strong>：檢出並淘汰 PI 動物、<strong>不接種疫苗</strong>、嚴格生物安全防止 PI 動物進入。</li>
       </ol>
       <p style="font-size:.9em; color:var(--fg-muted);">補充：PI 牛常用耳刻（ear notch）組織做抗原 ELISA 或 PCR 檢測；檢出陽性後隔 3–4 週再驗一次，以區分暫時性感染與 PI。根除計畫「不打疫苗」是為了讓血清監測（抗體）能偵測新感染。</p>
+      <details class="alert alert-warn study-note" style="font-size:.9em;line-height:1.65;margin:1rem 0">
+        <summary style="cursor:pointer;font-weight:700;color:var(--amber-700)">讀書補充Note - PI 牛是什麼？</summary>
+
+        <p><strong>1. 一句話</strong>：PI＝Persistently Infected（持續感染）。PI 牛＝胎兒期被 NCP 株感染、出生後<strong>終生帶毒、終生排毒</strong>的牛，是 BVD 在牛群裡一直存在的原因。</p>
+        <p><strong>2. 怎麼形成（講義 p.40–45）</strong></p>
+        <ol>
+          <li>母牛在懷孕<strong>前 4 個月（約 120 天以前）</strong>感染 BVDV；</li>
+          <li>病毒是<strong>非致細胞病變型（NCP）</strong>——兩種生物型（CP、NCP）都能穿過胎盤，但<strong>只有 NCP 株能在胎兒建立持續感染</strong>；</li>
+          <li>胎兒免疫系統在 120 天前還沒成熟，把病毒當成「自己」→ 免疫耐受（機轉為補充）；</li>
+          <li>出生後終生帶毒排毒，血清通常<strong>沒有抗體</strong>。</li>
+        </ol>
+        <p><strong>3. 對比</strong>：懷孕後期感染 → 仔牛出生時血清陽性（有抗體）、<strong>不是 PI</strong>；懷孕 90–150 天感染 NCP → 可能造成先天缺陷（小頭症、水腦、白內障、骨硬化症等）；出生後才感染 → 只是暫時性感染，之後有免疫力。</p>
+        <p><strong>4. 為什麼是「病毒工廠」</strong>：PI 牛是最主要的傳染源，病毒存在於所有分泌物與排泄物（鼻對鼻、空氣、糞尿）；牛群中 PI 牛平均盛行率約 <strong>1–2%</strong>；所以「控制 BVD ＝ 控制 PI 牛」。</p>
+        <p><strong>5. PI ＋ CP ＝ 黏膜病（MD）＝ 100% 死</strong>：PI 牛出生後再被 CP 株感染（外來或體內突變），發生黏膜病，通常 6 月齡到 2 歲。</p>
+        <p><strong>6. 怎麼找出 PI 牛</strong>：常用<strong>耳刻（ear notch）組織</strong>做<strong>抗原 ELISA 或 PCR</strong>；陽性後<strong>隔 3–4 週再驗一次</strong>，暫時性感染的病毒會消失、PI 牛持續陽性（補充）。PI 牛通常沒有抗體，所以不能只靠抗體檢測找。</p>
+        <p><strong>7. 對應控制策略</strong>：檢出淘汰 PI 牛（去掉傳染源）；防止新引進的牛（可能是 PI 或懷 PI 胎兒）帶進病毒；種母牛接種疫苗預防胎兒感染；懷孕牛不用 MLV；<strong>根除時不接種疫苗</strong>，讓血清監測（抗體）能偵測新感染。</p>
+      </details>
       <footer class="note-footer">資料來源：《反芻動物疾病學》課程講義〈Bovine Infectious Disease〉<a class="pdf-link" href="pdf/牛傳染病.pdf#page=50">p.50</a>。本頁為個人課堂筆記整理，僅供學習與複習使用，不作為正式診斷依據。</footer>
     </div>
 
@@ -599,6 +619,11 @@ body.pdf-dragging{user-select:none;cursor:col-resize}
       <div class="quiz-item"><span class="quiz-type quiz-type-vignette">臨床情境題</span>
         <div class="quiz-q">Q15.【臨床情境】一群 5–8 週齡的仔牛陸續發燒、呼吸急促、咳嗽，少數下痢；兩頭猝死，一頭痊癒後耳尖與尾尖乾黑壞死。剖檢有肺充血、化膿性肺炎、腸繫膜淋巴結腫大、肝脾腫大。請問：(1) 首先懷疑什麼？(2) 檢體怎麼取？(3) 牧場要注意哪些人畜共通與帶原問題？(4) 預防措施？</div>
         <details class="quiz-reveal"><summary></summary><p class="quiz-explain"><strong>(1)</strong> <em>Salmonella</em> Dublin：2–12 週齡、常表現呼吸道、敗血症、末端乾性壞疽（<a class="pdf-link" href="pdf/牛傳染病.pdf#page=9">p.9–10</a>、<a class="pdf-link" href="pdf/牛傳染病.pdf#page=15">p.15</a>）。<br><strong>(2)</strong> 以剖檢檢體培養（建議）或 PCR，糞便培養敏感度低；懷疑菌血症可採血；剖檢無特徵病灶（<a class="pdf-link" href="pdf/牛傳染病.pdf#page=19">p.19</a>）。<br><strong>(3)</strong> 人畜共通；成牛可成為潛伏帶原者，糞乳排菌（<a class="pdf-link" href="pdf/牛傳染病.pdf#page=10">p.10–11</a>）。<br><strong>(4)</strong> 減少暴露、增加抵抗力：衛生消毒（鹵素、酚、四級銨、氧化劑）、生物安全與鼠類控制、活減毒全菌苗、初乳（<a class="pdf-link" href="pdf/牛傳染病.pdf#page=8">p.8</a>、<a class="pdf-link" href="pdf/牛傳染病.pdf#page=20">p.20</a>）。</p></details>
+      </div>
+      <div class="quiz-cta" style="margin:2.5rem 0 1rem;padding:1.4rem 1.6rem;text-align:center;border:1px solid var(--line-soft);border-radius:var(--radius);background:var(--bg-soft)">
+        <p style="margin:0 0 .8rem;font-weight:600;color:var(--accent-deep)">讀完了？用題目檢查一下這章</p>
+        <a href="自我測驗/quiz.html?c=week04_%E7%89%9B%E5%82%B3%E6%9F%93%E7%97%85_%E8%85%B8%E8%83%83%E9%81%93%E7%96%BE%E7%97%85" style="display:inline-block;padding:.6rem 1.6rem;border-radius:999px;background:var(--accent);color:var(--bg);font-weight:700;text-decoration:none">📝 做這章的自我測驗 →</a>
+        <p style="margin:.7rem 0 0;font-size:.85em;color:var(--fg-muted)">每題作答後立即顯示解析；答錯的會進錯題本。</p>
       </div>
       <footer class="note-footer">練習題依講義內容出題，答案與解析僅供自我複習參考。</footer>
     </div>

@@ -60,6 +60,7 @@ body.pdf-dragging{user-select:none;cursor:col-resize}
       <div class="meta-item"><div class="meta-label">資料來源</div><div class="meta-value">《反芻動物疾病學》課程講義〈Physical Examination of Sheep and Goat〉p.1–53（余品奐 Yu Pin-Huan，國立臺灣大學）；補充：MSD Veterinary Manual、臺大獸醫專業學院師資資料、FAMACHA 與推廣教育文獻</div></div>
       <div class="meta-item"><div class="meta-label">最後更新</div><div class="meta-value">2026-10-23</div></div>
       <div class="meta-item"><div class="meta-label">講義 PDF</div><div class="meta-value"><a class="pdf-open-link" href="pdf/羊理學檢查.pdf#page=1">在右側開啟講義</a></div></div>
+      <div class="meta-item"><div class="meta-label">自我測驗</div><div class="meta-value"><a href="自我測驗/quiz.html?c=week06_%E7%BE%8A%E7%90%86%E5%AD%B8%E6%AA%A2%E6%9F%A5">做題 →</a></div></div>
       <div class="meta-item"><div class="meta-label">整理狀態</div><div class="meta-value">完整筆記</div></div>
     </div>
   </div>
@@ -89,6 +90,8 @@ body.pdf-dragging{user-select:none;cursor:col-resize}
     <a onclick="showSection('guokao')" id="nav-guokao"><span class="nav-icon">📚</span> 相關國考題</a>
     <a onclick="showSection('examdir')" id="nav-examdir"><span class="nav-icon">📝</span> 考試方向（推測）</a>
     <a onclick="showSection('quiz')" id="nav-quiz"><span class="nav-icon">✏️</span> 練習題</a>
+    <div class="section-label" style="margin-top:8px;">練習</div>
+    <a href="自我測驗/quiz.html?c=week06_%E7%BE%8A%E7%90%86%E5%AD%B8%E6%AA%A2%E6%9F%A5" id="nav-quiz-link"><span class="nav-icon">📝</span> 自我測驗</a>
   </nav>
 
   <main class="pagebody" id="mainContent">
@@ -283,6 +286,34 @@ body.pdf-dragging{user-select:none;cursor:col-resize}
           <li><strong>瓶頸（bottle jaw）</strong>：寄生蟲造成貧血與低白蛋白 → 整個下巴水腫。</li>
         </ol>
         <p><strong>3. 淋巴結腫</strong>：感染多為多發性，可做細針抽吸（FNA）。</p>
+      </details>
+      <details class="alert alert-warn study-note" style="font-size:.9em;line-height:1.65;margin:1rem 0">
+        <summary style="cursor:pointer;font-weight:700;color:var(--amber-700)">讀書補充Note - FAMACHA 系統是什麼？</summary>
+
+        <p><strong>1. 一句話</strong></p>
+        <ul>
+          <li>用<strong>下眼瞼結膜的顏色</strong>對照色卡，快速估計羊的貧血程度，找出被<strong>捻轉胃蟲（Haemonchus contortus）</strong>重度感染的羊，<strong>只替這些羊驅蟲</strong>（選擇性驅蟲）。</li>
+          <li>名稱源自南非發展此法的人名縮寫（記憶補充，未查證，非考點）。</li>
+        </ul>
+        <p><strong>2. 原理</strong></p>
+        <ul>
+          <li>捻轉胃蟲寄生在皺胃吸血 → 失血性貧血＋低蛋白血症（下巴水腫＝瓶頸）。</li>
+          <li>貧血 → 下眼瞼結膜由紅變白；看結膜就能估計，不必逐隻抽血。</li>
+        </ul>
+        <p><strong>3. 怎麼判讀</strong>（1 櫻桃紅 → 5 白色）</p>
+        <ol>
+          <li>1、2 分：不驅蟲。</li>
+          <li>3 分：臨界；群內 &gt; 10% 為 4–5 分、小羊、懷孕或泌乳母羊、BCS 差、有其他疾病時才考慮驅蟲。</li>
+          <li>4、5 分：驅蟲。</li>
+        </ol>
+        <p><strong>4. 為什麼要選擇性驅蟲</strong>：全群定期驅蟲會很快選出抗藥性蟲株。</p>
+        <p><strong>5. 限制與連結</strong></p>
+        <ul>
+          <li>只適用吸血的捻轉胃蟲；其他線蟲造成的下痢、消瘦不一定貧血。</li>
+          <li>瓶頸要和結膜一起看，兩者都指向捻轉胃蟲。</li>
+          <li>國考 105-1 #47：羊嚴重感染捻轉胃蟲的主要症狀＝貧血（B）。</li>
+          <li>分級與驅蟲條件出自 UF/IFAS、URI 推廣資料（同本頁「FAMACHA 補充」）；老師講義只寫名稱，考試以上課說法為準。</li>
+        </ul>
       </details>
       <details class="alert alert-warn study-note" style="font-size:.9em;line-height:1.65;margin:1rem 0">
         <summary style="cursor:pointer;font-weight:700;color:var(--amber-700)">讀書補充Note - 眼、口腔、牙齒：上課補充（2022 共筆）</summary>
@@ -1120,6 +1151,11 @@ body.pdf-dragging{user-select:none;cursor:col-resize}
       <div class="quiz-item"><span class="quiz-type quiz-type-vignette">臨床情境題</span>
         <div class="quiz-q">Q15.【臨床情境】一群綿羊吃的是附近乳牛場送來的剩餘精料，某天運輸到新牧場後，一頭母羊突然沉鬱臥地、尿液呈深紅色、結膜黃染。血液抹片可見 Heinz body 與溶血。請問：(1) 最可能的診斷？(2) 為什麼在運輸後發作？(3) 講義列的其他溶血毒素？(4) 採血時要注意什麼？</div>
         <details class="quiz-reveal"><summary></summary><p class="quiz-explain"><strong>(1)</strong> 慢性銅中毒的溶血危象（綿羊最敏感；牛飼料銅含量對綿羊過高）（<a class="pdf-link" href="pdf/羊理學檢查.pdf#page=41">p.41</a>；補充 MSD）。<br><strong>(2)</strong> 緊迫（運輸）讓肝臟累積的銅大量釋出（補充 MSD）。<br><strong>(3)</strong> 洋蔥、蕨類（Heinz body、氧化傷害）（<a class="pdf-link" href="pdf/羊理學檢查.pdf#page=41">p.41</a>）。<br><strong>(4)</strong> 紅血球易溶血，避免真空採血管造成體外溶血干擾判讀，用 EDTA 管並看抹片（<a class="pdf-link" href="pdf/羊理學檢查.pdf#page=40">p.40</a>；山羊特別明顯）。</p></details>
+      </div>
+      <div class="quiz-cta" style="margin:2.5rem 0 1rem;padding:1.4rem 1.6rem;text-align:center;border:1px solid var(--line-soft);border-radius:var(--radius);background:var(--bg-soft)">
+        <p style="margin:0 0 .8rem;font-weight:600;color:var(--accent-deep)">讀完了？用題目檢查一下這章</p>
+        <a href="自我測驗/quiz.html?c=week06_%E7%BE%8A%E7%90%86%E5%AD%B8%E6%AA%A2%E6%9F%A5" style="display:inline-block;padding:.6rem 1.6rem;border-radius:999px;background:var(--accent);color:var(--bg);font-weight:700;text-decoration:none">📝 做這章的自我測驗 →</a>
+        <p style="margin:.7rem 0 0;font-size:.85em;color:var(--fg-muted)">每題作答後立即顯示解析；答錯的會進錯題本。</p>
       </div>
       <footer class="note-footer">練習題依講義內容出題；標示補充的題目引用 MSD、FAMACHA 與推廣教育資料，答案與解析僅供自我複習參考。</footer>
     </div>
